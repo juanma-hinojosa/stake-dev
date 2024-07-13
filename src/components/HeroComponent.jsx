@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../css/hero-component.css";
 
 function HeroComponent() {
@@ -12,6 +13,8 @@ function HeroComponent() {
               Para la creacioln de tu sitio web escuchamos que tenes en mente y
               te ayudamos a transformar esa idea en realidad pixel por pixel
             </p>
+
+            <Link to ='/portfolio'>Trabajos</Link>
         </div>
       </div>
     </section>
