@@ -1,0 +1,29 @@
+.hero-section {
+  height: 100vh;
+  background-image: url(../images/background-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .hero-section-container {
+  color: #fff;
+}
+
+.hero-section .hero-section-container .hero-contain h1 {
+  max-width: 750px;
+  font-size: 83px;
+  line-height: 80px;
+  margin-bottom: 30px;
+}
+.hero-section div .hero-contain p {
+  max-width: 550px;
+  line-height: 1.6rem;
+  font-size: 15pt;
+}
+
+span {
+  color: var(--celeste);
+}
