@@ -1,0 +1,64 @@
+figure {
+  background-color: rgba(155, 152, 152, 0.233);
+  padding: 20px;
+  border-radius: 5px;
+  border-bottom: 1px solid #4c4c4c;
+  border-left: 1px solid #4c4c4c;
+  transition: 0.3s;
+}
+
+figure:hover {
+  transform: translateY(-20px);
+}
+
+figure .icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333232d5;
+  border-radius: 5px;
+}
+
+figure .icon-container .icon-services {
+  font-size: 35px;
+  color: var(--verde-oscuro);
+}
+
+.oswald-title-card {
+  font-size: 30px;
+  color: #fff;
+}
+
+p {
+  font-size: 14px;
+  color: #f5f5f5;
+}
+
+figure .link-icon-container {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #4c4c4c;
+}
+
+figure .link-icon-container .link-icon {
+  width: auto;
+  height: 60%;
+  transform: rotate(35deg);
+  font-size: 30px;
+  color: #fff;
+  transition: 0.3s;
+  /* background-size: contain; */
+}
+figure .link-icon-container:hover {
+  background-color: #fff;
+}
+figure .link-icon-container .link-icon:hover {
+  background-size: cover;
+  color: var(--verde-oscuro);
+}
