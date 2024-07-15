@@ -1,5 +1,6 @@
-import '../css/services-section.css'
-import CardServicesComponent from './CardServicesComponent';
+import "../css/services-section.css";
+import { cardServices } from "../js/list";
+import CardServicesComponent from "./CardServicesComponent";
 import TitleSectionComponent from "./TitleSectionComponent";
 
 function ServicesSection() {
@@ -12,11 +13,11 @@ function ServicesSection() {
           parrafo="Vamos cumplir tus expectativas y que no recurras a otras agencias para tus proyectos web"
         />
         <div className="services-grid-container">
-            <CardServicesComponent />
-            <CardServicesComponent />
-            <CardServicesComponent />
-            <CardServicesComponent />
-            <CardServicesComponent />
+          {cardServices.map((service) => (
+            <CardServicesComponent key={service.id} 
+            icon = {service.icon}
+            title={service.title} />
+          ))}
         </div>
       </div>
     </section>
