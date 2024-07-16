@@ -7,9 +7,15 @@ section .services-grid-container {
   gap: 2rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 550px) {
   section .services-grid-container {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 750px) {
+  section .services-grid-container {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
