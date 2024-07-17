@@ -1,5 +1,6 @@
 import "../css/portfolio-section.css";
-// import EartCanvas from "./PlanetComponent";
+// import GridPorfolioGallery from "./GridPortfolio";
+import EartCanvas from "./PlanetComponent";
 import TitleSectionComponent from "./TitleSectionComponent";
 
 function ProjectSection() {
@@ -12,8 +13,8 @@ function ProjectSection() {
           parrafo="Estamos orgullosos de presentar nuestros trabajos para que puedas ver como trabajamos y ver los estandares de nuestros proyectos y la calidad que vas a recibir si trabajas con nosotros, te mostramos diferentes modelos en el transcurso para lograr tu aprobacion final"
         />
       </div>
-
-      {/* <EartCanvas /> */}
+      {/* <GridPorfolioGallery /> */}
+      <EartCanvas />
     </section>
   );
 }
