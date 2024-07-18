@@ -1,4 +1,5 @@
 import TitleSectionComponent from "./TitleSectionComponent";
+// import EartCanvas from "./PlanetComponent";
 
 function ContactSection() {
   return (
@@ -10,6 +11,8 @@ function ContactSection() {
           parrafo="Nos encantaria poder escuchar tus ideas y que tenes en mente para brindarte nuestra ayuda y dar un salto de calidad en tu negocio y poder crecer juntos en el mundo del desarrollo web"
         />
       </div>
+      {/* <EartCanvas /> */}
+
     </section>
   );
 }
