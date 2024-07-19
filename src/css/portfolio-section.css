@@ -1,25 +1,14 @@
 .portfolio-container .grid-portfolio-container {
   display: grid;
-  gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
-}
-/* 
-@media (max-width: 650px) {
-  .portfolio-container .grid-portfolio-container {
-padding: 20px 0;
-  }
-} */
-
-@media (max-width: 650px) {
-  .portfolio-container .grid-portfolio-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  gap: 1rem;
 }
 
-@media (min-width: 750px) {
+@media (min-width: 650px) {
   .portfolio-container .grid-portfolio-container {
     grid-template-columns: repeat(2, 1fr);
+
   }
 }
 

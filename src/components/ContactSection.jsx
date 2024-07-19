@@ -1,9 +1,11 @@
+import FormContactComponent from "./FormContactComponent";
 import TitleSectionComponent from "./TitleSectionComponent";
-// import EartCanvas from "./PlanetComponent";
+import EartCanvas from "./PlanetComponent";
+import '../css/contact-section.css'
 
 function ContactSection() {
   return (
-    <section>
+    <section className="contact-container">
       <div className="section-width">
         <TitleSectionComponent
           subtitle="Contactanos"
@@ -11,7 +13,10 @@ function ContactSection() {
           parrafo="Nos encantaria poder escuchar tus ideas y que tenes en mente para brindarte nuestra ayuda y dar un salto de calidad en tu negocio y poder crecer juntos en el mundo del desarrollo web"
         />
       </div>
-      {/* <EartCanvas /> */}
+      <div className="grid-contact">
+        <FormContactComponent />
+        <EartCanvas />
+      </div>
 
     </section>
   );
