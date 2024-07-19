@@ -1,4 +1,5 @@
 import "../css/portfolio-section.css";
+import { cardPortfolio } from "../js/list";
 import CardPortfolioComponent from "./CardPortfolioComponent";
 import TitleSectionComponent from "./TitleSectionComponent";
 
@@ -13,12 +14,14 @@ function ProjectSection() {
         />
       </div>
       <div className="grid-portfolio-container">
-        <CardPortfolioComponent />
-        <CardPortfolioComponent />
-        <CardPortfolioComponent />
-        <CardPortfolioComponent />
-        <CardPortfolioComponent />
-        <CardPortfolioComponent />
+        {cardPortfolio.map((portfolio) => (
+          <CardPortfolioComponent
+            key={portfolio.id}
+            img={portfolio.img}
+            title={portfolio.title}
+            parrafo={portfolio.parrafo}
+          />
+        ))}
       </div>
     </section>
   );
