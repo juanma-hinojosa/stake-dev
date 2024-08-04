@@ -16,6 +16,7 @@ function ProjectSection() {
       <div className="grid-portfolio-container">
         {cardPortfolio.map((portfolio) => (
           <CardPortfolioComponent
+            id={portfolio.id}
             key={portfolio.id}
             img={portfolio.img}
             title={portfolio.title}
