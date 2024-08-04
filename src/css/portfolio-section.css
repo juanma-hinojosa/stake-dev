@@ -2,7 +2,7 @@
   display: grid;
   max-width: 1000px;
   margin: 0 auto;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 @media (min-width: 650px) {
@@ -14,6 +14,6 @@
 
 @media (min-width: 990px) {
   .portfolio-container .grid-portfolio-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }

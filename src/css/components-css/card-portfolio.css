@@ -1,5 +1,7 @@
 .img-porfolio-container{
   width: 100%;
+  background-color: rgba(155, 152, 152, 0.233);
+  padding: 20px 40px;
 }
 
 .img-porfolio-container > img {
@@ -8,16 +10,20 @@
 
 .card-container {
   color: #fff;
-  text-align: center;
-  background-color: rgba(155, 152, 152, 0.233);
-  padding: 20px;
-  border-radius: 5px;
-  transition: 0.3s;
 }
 
-.card-container:hover {
-  background-color: rgba(99, 98, 98, 0.233);
+.link-id {
+  margin-top: 10px;
+  text-decoration: none;
   color: var(--verde-oscuro);
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  transition: .3s;
+}
+
+.link-id:hover {
+  color: #02706b;
 }
 
 .tecnologia-list {

@@ -10,7 +10,7 @@ function NavbarComponentTwo() {
     { id: 0, path: "/", name: "inicio" },
     { id: 1, path: "/services", name: "servicios" },
     { id: 2, path: "/about-us", name: "nosotros" },
-    { id: 3, path: "/porfolio", name: "trabajos" },
+    { id: 3, path: "/portfolio", name: "trabajos" },
     { id: 4, path: "/contact", name: "contacto" },
   ];
 

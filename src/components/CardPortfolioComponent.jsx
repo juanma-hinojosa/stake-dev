@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
 import "../css/components-css/card-portfolio.css";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 function CardPortfolioComponent(props) {
   return (
@@ -10,15 +11,8 @@ function CardPortfolioComponent(props) {
       </figcaption>
 
       <div className="info-container">
-        <div className="tecnologia-list montserrat-subtitle">
-          <h2 className="tecnologia">#ReactJS</h2>
-          <h2 className="tecnologia">#MongoDB</h2>
-          <h2 className="tecnologia">#API Spotify</h2>
-        </div>
-
         <h1 className="oswald-title">{props.title}</h1>
-        <p className="poppins-regular">{props.parrafo}</p>
-        <Link to='/'>Ver Proyecto</Link>
+        <Link className="link-id poppins-regular" to='/'>Ver Proyecto <Icon icon="eva:diagonal-arrow-right-up-fill" /></Link>
       </div>
     </figure>
   );

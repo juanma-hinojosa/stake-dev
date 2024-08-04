@@ -4,15 +4,16 @@ import "./App.css";
 import HomePage from "./pages/HomePage";
 import ErrorPage from "./pages/ErrorPage";
 import NavbarComponentTwo from "./components/NavbarComponentTwo";
+import PortfolioPage from "./pages/PortfolioPage";
 
 function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <NavbarComponent /> */}
         <NavbarComponentTwo />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>

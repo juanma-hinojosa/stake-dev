@@ -19,7 +19,7 @@ function ProjectSection() {
             key={portfolio.id}
             img={portfolio.img}
             title={portfolio.title}
-            parrafo={portfolio.parrafo}
+            // parrafo={portfolio.parrafo}
           />
         ))}
       </div>
