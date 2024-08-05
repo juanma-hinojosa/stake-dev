@@ -8,7 +8,7 @@ function BannerComponent(props) {
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
         backgroundSize: "cover",
-        height: "400px",
+        height: "360px",
       }}
     ></section>
   );

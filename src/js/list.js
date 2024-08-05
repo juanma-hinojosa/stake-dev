@@ -40,9 +40,12 @@ export const cardPortfolio = [
     title: "Vengan de a Uno",
     parrafo:
       "Programa de futbol el cual necesitaban una pagina de presentacion para sus seguidores",
-    category: "podcast",
+    category: "PODCAST",
     img: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     banner: "/images/1.jpg",
+    resumen:'Vista desde Celular',
+    type:'MOBILE',
+    resumenMobile:'Version de celular de la pagina y resumen'
   },
   {
     id: 1,
@@ -52,6 +55,9 @@ export const cardPortfolio = [
     category: "odontologia",
     img: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     banner: "/images/2.jpg",
+    resumen:'Vista desde Celular',
+    type:'MOBILE',
+    resumenMobile:'Version de celular de la pagina y resumen'
   },
   {
     id: 2,
@@ -61,6 +67,9 @@ export const cardPortfolio = [
     category: "construccion",
     img: "https://images.unsplash.com/photo-1482731215275-a1f151646268?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     banner: "../src/assets/images/1.jpg",
+    resumen:'Vista desde Celular',
+    type:'MOBILE',
+    resumenMobile:'Version de celular de la pagina y resumen'
   },
   {
     id: 3,
@@ -70,5 +79,8 @@ export const cardPortfolio = [
     category: "estudio de abogados",
     img: "https://plus.unsplash.com/premium_photo-1698084059560-9a53de7b816b?q=80&w=1411&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     banner: "../src/assets/images/2.jpg",
+    resumen:'Vista desde Celular',
+    type:'MOBILE',
+    resumenMobile:'Version de celular de la pagina y resumen'
   },
 ];
