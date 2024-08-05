@@ -3,6 +3,9 @@ import "../css/footer.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
 
 function FooterComponent() {
+  function getYear() {
+    return new Date().getFullYear();
+  }
   const navLinks = [
     { id: 0, path: "/", name: "inicio" },
     { id: 1, path: "/services", name: "servicios" },
@@ -21,6 +24,13 @@ function FooterComponent() {
     { id: 1, path: "/about-us", name: "nosotros" },
     { id: 2, path: "/portfolio", name: "trabajos" },
     { id: 3, path: "/bases", name: "bases y condiciones" },
+  ];
+  const iconsSocial = [
+    { id: 0, icon: "ic:baseline-facebook" },
+    { id: 1, icon: "mdi:instagram" },
+    { id: 2, icon: "mdi:gmail" },
+    { id: 3, icon: "ic:baseline-whatsapp" },
+    { id: 4, icon: "mdi:github" },
   ];
   return (
     <footer>
@@ -66,11 +76,18 @@ function FooterComponent() {
 
       <div className="helper-line"></div>
       <div className="icons-links">
-        <Icon className="icon-footer" icon="ic:baseline-facebook" />
-        <Icon className="icon-footer" icon="mdi:instagram" />
-        <Icon className="icon-footer" icon="mdi:gmail" />
-        <Icon className="icon-footer" icon="ic:baseline-whatsapp" />
-        <Icon className="icon-footer" icon="mdi:github" />
+        {iconsSocial.map((socialIcon) => (
+          <Icon
+            key={socialIcon.id}
+            className="icon-footer"
+            icon={socialIcon.icon}
+          />
+        ))}
+      </div>
+      <div className="text-footer">
+        <small className="poppins-regular">
+          &copy; {getYear()} <b>Stake Dev</b> - Todos los Derechos Reservados.
+        </small>
       </div>
     </footer>
   );

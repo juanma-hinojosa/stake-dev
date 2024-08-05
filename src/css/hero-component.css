@@ -1,11 +1,11 @@
 .hero-section {
-  height: 100vh;
-  /* background-image: url(../images/background-hero.jpg); */
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
+  padding: 0 40px;
 }
 
 .hero-section .hero-section-container {
@@ -26,4 +26,22 @@
 
 span {
   color: var(--celeste);
+}
+
+@media (max-width: 700px) {
+  .hero-section {
+    padding: 0 20px;
+  }
+  .hero-section .hero-section-container .hero-contain {
+    text-align: center;
+  }
+  .hero-section .hero-section-container .hero-contain h1 {
+    width: 100%;
+    font-size: 4rem;
+    line-height: 60px;
+  }
+
+  .hero-section .hero-section-container .hero-contain p {
+    font-size: 1.2rem;
+  }
 }

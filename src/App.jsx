@@ -8,6 +8,7 @@ import PortfolioPage from "./pages/PortfolioPage";
 import RouteDinamicPortfolio from "./pages/RDPortfolio";
 import { cardPortfolio } from "./js/list";
 import FooterComponent from "./components/FooterComponent";
+import ServicesPage from "./pages/ServicesPage";
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/portfolio/:id" element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />} />          
+          <Route path="/portfolio/:id" element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />} />   
+          <Route path="/services" element={<ServicesPage />} />       
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <FooterComponent />

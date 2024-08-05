@@ -19,7 +19,7 @@ function HeroComponent(props) {
 
           <Link to="/portfolio">Trabajos</Link>
         </div>
-      </div>
+      </div> 
     </section>
   );
 }

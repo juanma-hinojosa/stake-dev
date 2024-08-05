@@ -40,6 +40,7 @@ export const cardPortfolio = [
     title: "Vengan de a Uno",
     parrafo:
       "Programa de futbol el cual necesitaban una pagina de presentacion para sus seguidores",
+    category: "podcast",
     img: "https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
@@ -47,6 +48,7 @@ export const cardPortfolio = [
     title: "Odontologia C.I.O.S.",
     parrafo:
       "Consultorio odontologico. Necesitaban brindar informacion sobre tratamientos y mostrar sus procedimientos",
+    category: "odontologia",
     img: "https://images.unsplash.com/photo-1571772996211-2f02c9727629?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
@@ -54,13 +56,15 @@ export const cardPortfolio = [
     title: "SMIVE",
     parrafo:
       "Constructora de reparaciones y mantimiento integral de edificios y hogares",
-      img:'https://images.unsplash.com/photo-1482731215275-a1f151646268?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    category: "construccion",
+    img: "https://images.unsplash.com/photo-1482731215275-a1f151646268?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: 3,
     title: "Abogados R&R",
     parrafo:
       "Estudio de abogacia. Este estudio necesitaba una pagina web profesional y sencilla para demostrar caracter al mercado",
-      img:'https://plus.unsplash.com/premium_photo-1698084059560-9a53de7b816b?q=80&w=1411&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+    category: "estudio de abogados",
+    img: "https://plus.unsplash.com/premium_photo-1698084059560-9a53de7b816b?q=80&w=1411&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
 ];

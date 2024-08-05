@@ -1,23 +1,38 @@
-header {
-    color: #fff;
+.title-wrapper-component {
+  color: #fff;
+  padding: 50px 0;
 }
 
 h2 {
-    font-size: 24px;
-    letter-spacing: 2.9px;
+  font-size: 24px;
+  letter-spacing: 2.9px;
 }
 
 h1 {
-    font-size: 57px;
+  font-size: 57px;
 }
 
 p {
-    max-width: 800px;
-    color: #EEE2E2;
+  max-width: 800px;
+  color: #eee2e2;
 }
 
 .star {
   color: var(--verde-oscuro);
   transform: rotate(35deg);
   font-size: 2.4rem;
+}
+@media (max-width: 1000px) {
+    .title-wrapper-component {
+      padding: 50px 20px;
+    }
+}
+
+@media (max-width: 560px) {
+  /* .title-wrapper-component {
+    padding: 0 20px;
+  } */
+.title-wrapper-component h1 {
+    line-height: 70px;
+}
 }

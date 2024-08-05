@@ -17,3 +17,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 560px) {
+  .portfolio-container .grid-portfolio-container {
+    padding: 0 20px;
+  } 
+}

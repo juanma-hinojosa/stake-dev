@@ -1,0 +1,30 @@
+.error-container {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 700px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(https://images.unsplash.com/photo-1623018035782-b269248df916?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.error-container div h2 {
+  font-size: 20rem;
+}
+
+@media (max-width: 560px) {
+    .error-container div h2{
+        font-size: 6rem;
+    }
+
+    .error-container div h1 {
+        font-size: 2.3rem;
+    }
+    
+    .error-container div p {
+        font-size: 1.4rem;
+    }
+}
