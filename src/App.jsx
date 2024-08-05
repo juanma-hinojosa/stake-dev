@@ -7,6 +7,7 @@ import NavbarComponentTwo from "./components/NavbarComponentTwo";
 import PortfolioPage from "./pages/PortfolioPage";
 import RouteDinamicPortfolio from "./pages/RDPortfolio";
 import { cardPortfolio } from "./js/list";
+import FooterComponent from "./components/FooterComponent";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/portfolio/:id" element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />} />          
           <Route path="*" element={<ErrorPage />} />
         </Routes>
+        <FooterComponent />
       </BrowserRouter>
     </>
   );
