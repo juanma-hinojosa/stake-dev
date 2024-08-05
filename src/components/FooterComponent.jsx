@@ -8,7 +8,7 @@ function FooterComponent() {
   }
   const navLinks = [
     { id: 0, path: "/", name: "inicio" },
-    { id: 1, path: "/services", name: "servicios" },
+    // { id: 1, path: "/services", name: "servicios" },
     { id: 2, path: "/about-us", name: "nosotros" },
     { id: 3, path: "/portfolio", name: "trabajos" },
   ];
