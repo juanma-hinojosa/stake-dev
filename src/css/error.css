@@ -11,20 +11,25 @@
   background-size: cover;
 }
 
+.error-container div .container-link {
+  display: flex;
+  justify-content: center;
+}
+
 .error-container div h2 {
   font-size: 20rem;
 }
 
 @media (max-width: 560px) {
-    .error-container div h2{
-        font-size: 6rem;
-    }
+  .error-container div h2 {
+    font-size: 6rem;
+  }
 
-    .error-container div h1 {
-        font-size: 2.3rem;
-    }
-    
-    .error-container div p {
-        font-size: 1.4rem;
-    }
+  .error-container div h1 {
+    font-size: 2.3rem;
+  }
+
+  .error-container div p {
+    font-size: 1.4rem;
+  }
 }

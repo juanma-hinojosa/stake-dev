@@ -1,13 +1,14 @@
 /* eslint-disable react/prop-types */
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "../css/hero-component.css";
+import ButtonComponent from "./ButtonComponent";
 
 function HeroComponent(props) {
   return (
     <section
       className="hero-section"
       style={{
-        backgroundImage: `url(${props.img})`
+        backgroundImage: `url(${props.img})`,
       }}
     >
       <div className="hero-section-container">
@@ -17,9 +18,10 @@ function HeroComponent(props) {
           </h1>
           <p className="poppins-light">{props.p}</p>
 
-          <Link to="/portfolio">Trabajos</Link>
+          <ButtonComponent path={props.path} name={props.name} />
+          {/* <Link to="/portfolio">Trabajos</Link> */}
         </div>
-      </div> 
+      </div>
     </section>
   );
 }
