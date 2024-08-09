@@ -9,6 +9,7 @@ import RouteDinamicPortfolio from "./pages/RDPortfolio";
 import { cardPortfolio } from "./js/list";
 import FooterComponent from "./components/FooterComponent";
 import ServicesPage from "./pages/ServicesPage";
+import NosotrosPage from "./pages/Nosotros";
 
 function App() {
   return (
@@ -19,7 +20,8 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/portfolio/:id" element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />} />   
-          <Route path="/services" element={<ServicesPage />} />       
+          <Route path="/services" element={<ServicesPage />} />     
+          <Route path="/about-us" element={<NosotrosPage />} />  
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <FooterComponent />

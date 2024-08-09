@@ -10,7 +10,7 @@
 }
 
 .header-container.active {
-  background-color: black;
+  background-color: var(--background-oscuro);
 }
 
 .header-container section {
@@ -28,7 +28,7 @@
 .logo {
   max-width: 3.4rem;
 }
-.nav-list {
+.nav-list { 
   list-style-type: none;
   display: flex;
   gap: 1rem;
@@ -74,7 +74,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--verde-oscuro);
+    background-color: var(--background-oscuro);
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     z-index: 999999999;

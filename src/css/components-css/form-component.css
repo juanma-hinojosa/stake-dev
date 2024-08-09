@@ -1,0 +1,74 @@
+
+/* Estilos generales del formulario */
+.my-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Estilos de los campos de entrada y área de texto */
+.my-form input[type="text"],
+.my-form input[type="email"],
+.my-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 5px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Estilos del botón */
+.my-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.my-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Media queries para hacer el formulario responsive */
+@media (max-width: 768px) {
+    .my-form {
+        padding: 15px;
+    }
+
+    .my-form input[type="text"],
+    .my-form input[type="email"],
+    .my-form textarea {
+        font-size: 14px;
+    }
+
+    .my-form button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .my-form {
+        padding: 10px;
+    }
+
+    .my-form input[type="text"],
+    .my-form input[type="email"],
+    .my-form textarea {
+        font-size: 12px;
+    }
+
+    .my-form button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}

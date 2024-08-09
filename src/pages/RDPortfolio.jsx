@@ -1,8 +1,10 @@
 /* eslint-disable react/prop-types */
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import TitleSectionComponent from "../components/TitleSectionComponent";
 import BannerComponent from "../components/BannerComponent";
 import MobileSection from "../components/MobileSection";
+import ContactSection from "../components/ContactSection";
+import ButtonComponent from "../components/ButtonComponent";
 
 function RouteDinamicPortfolio({ cardPortfolio }) {
   const { id } = useParams();
@@ -20,7 +22,8 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
         resumen={cardPortfolio[id].resumen}
         resumenMobile={cardPortfolio[id].resumenMobile}
       />
-      <Link to="/portfolio">Volver</Link>
+      <ButtonComponent path="/portfolio" name="Volver" />
+      <ContactSection />
     </section>
   );
 }

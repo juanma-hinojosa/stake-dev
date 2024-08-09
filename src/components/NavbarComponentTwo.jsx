@@ -8,10 +8,9 @@ function NavbarComponentTwo() {
   const [navbar, setNavbar] = useState(false);
   const navLinks = [
     { id: 0, path: "/", name: "inicio" },
-    // { id: 1, path: "/services", name: "servicios" },
-    { id: 2, path: "/about-us", name: "nosotros" },
-    { id: 3, path: "/portfolio", name: "trabajos" },
-    { id: 4, path: "/contact", name: "contacto" },
+    { id: 1, path: "/about-us", name: "nosotros" },
+    { id: 2, path: "/portfolio", name: "trabajos" },
+    { id: 3, path: "/contact", name: "contacto" },
   ];
 
   const changeBackground = () => {
@@ -35,7 +34,6 @@ function NavbarComponentTwo() {
   }
 
   return (
-    // <header className="header-container active poppins-regular">
     <header className={navbar ? 'header-container active poppins-regular' : 'header-container poppins-regular'} >
       <section>
         <a href="#">LOGO</a>

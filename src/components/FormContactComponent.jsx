@@ -1,17 +1,20 @@
-// import EartCanvas from "./PlanetComponent";
+import "../css/components-css/form-component.css";
 
 function FormContactComponent() {
   return (
     <section>
-      <div>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum eligendi,
-        iure iusto id ducimus doloribus pariatur ea officia qui iste. Recusandae
-        tempora sed quae ea, dolorum esse nulla molestiae doloremque et
-        excepturi laborum at veniam aliquam dicta quas mollitia officia, beatae
-        rerum amet similique magni quaerat! Pariatur possimus laudantium
-        eveniet?
-      </div>
-      {/* <EartCanvas /> */}
+      <form className="my-form poppins-regular">
+        <label className="poppins-regular" htmlFor="name">Nombre:</label>
+        <input className="poppins-regular" type="text" id="name" name="name" required />
+
+        <label className="poppins-regular" htmlFor="email">Correo Electrónico:</label>
+        <input className="poppins-regular" type="email" id="email" name="email" required />
+
+        <label className="poppins-regular" htmlFor="message">Mensaje:</label>
+        <textarea className="poppins-regular" id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" className="poppins-regular">Enviar</button>
+      </form>
     </section>
   );
 }

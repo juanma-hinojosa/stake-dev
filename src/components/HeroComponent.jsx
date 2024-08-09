@@ -8,18 +8,20 @@ function HeroComponent(props) {
     <section
       className="hero-section"
       style={{
-        backgroundImage: `url(${props.img})`,
+        backgroundImage: `  
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(${props.img})`,
       }}
     >
       <div className="hero-section-container">
         <div className="hero-contain">
           <h1 className="oswald-title">
-            Desarollemos tu sitio web <span>increible</span> para tu negocio
+            {props.fraseUno} <span>{props.spam}</span> {props.fraseDos}
           </h1>
           <p className="poppins-light">{props.p}</p>
-
-          <ButtonComponent path={props.path} name={props.name} />
-          {/* <Link to="/portfolio">Trabajos</Link> */}
+          <div className="button-container">
+            <ButtonComponent path={props.path} name={props.name} />
+          </div>
         </div>
       </div>
     </section>
