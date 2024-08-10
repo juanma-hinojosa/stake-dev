@@ -1,5 +1,6 @@
 import FormContactComponent from "./FormContactComponent";
 import TitleSectionComponent from "./TitleSectionComponent";
+import Logo from "../../public/images/logo.png";
 // import EartCanvas from "./PlanetComponent";
 import "../css/contact-section.css";
 
@@ -13,11 +14,11 @@ function ContactSection() {
           parrafo="Nos encantaria poder escuchar tus ideas y que tenes en mente para brindarte nuestra ayuda y dar un salto de calidad en tu negocio y poder crecer juntos en el mundo del desarrollo web"
         />
       </div>
-      <div
-        className="grid-contact"
-      >
+      <div className="grid-contact">
         <FormContactComponent />
-        {/* <EartCanvas /> */}
+        <figcaption>
+          <img src={Logo} alt="Logo StakeDev" />
+        </figcaption>
       </div>
     </section>
   );

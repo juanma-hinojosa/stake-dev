@@ -9,8 +9,8 @@ function MobileSection(props) {
       <section className="mobile-container">
         <figure className="description-mobile">
           <TitleSectionComponent
-            subtitle={props.type}
-            title={props.resumen}
+            subtitle='MOBILE'
+            title='Vista desde Celular'
             parrafo={props.resumenMobile}
           />
         </figure>
@@ -24,9 +24,9 @@ function MobileSection(props) {
         </figcaption>
         <figure className="description-mobile">
           <TitleSectionComponent
-            subtitle={props.type}
-            title={props.resumen}
-            parrafo={props.resumenMobile}
+            subtitle='DESKTOP'
+            title='Vista de Escritorio'
+            parrafo={props.resumenDesktop}
           />
         </figure>
       </section>

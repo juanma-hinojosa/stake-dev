@@ -11,16 +11,18 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
 
   return (
     <section>
-      <TitleSectionComponent
-        subtitle={cardPortfolio[id].category}
-        title={cardPortfolio[id].title}
-        parrafo={cardPortfolio[id].parrafo}
-      />
+      <section className="section-width">
+        <TitleSectionComponent
+          subtitle={cardPortfolio[id].category}
+          title={cardPortfolio[id].title}
+          parrafo={cardPortfolio[id].parrafo}
+        />
+      </section>
+
       <BannerComponent banner={cardPortfolio[id].banner} />
       <MobileSection
-        type={cardPortfolio[id].type}
-        resumen={cardPortfolio[id].resumen}
         resumenMobile={cardPortfolio[id].resumenMobile}
+        resumenDesktop={cardPortfolio[id].resumenDesktop}
       />
       <ButtonComponent path="/portfolio" name="Volver" />
       <ContactSection />

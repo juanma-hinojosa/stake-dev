@@ -1,8 +1,35 @@
 .contact-container .grid-contact {
-    max-width: 1200px;
-    margin: auto;
-    display: grid;
-    
-    gap: 2rem;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 0 20px;
+}
+
+@media (min-width: 800px) {
+  .contact-container .grid-contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* @media (min-width: 650px) {
+  .contact-container .grid-contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+} */
+
+@media (max-width: 760px) {
+  .contact-container .grid-contact {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  figcaption img {
+    width: 30%;
+  }
 }
