@@ -75,8 +75,17 @@ footer .text-footer {
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 650px) {
   .columns-container {
     padding: 0 20px;
   } 
+
+  .columns-container .column ul:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .columns-container .column ul:nth-child(1) img {
+    width: 50%;
+  }
 }

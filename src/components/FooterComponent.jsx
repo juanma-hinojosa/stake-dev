@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import "../css/footer.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import Logo from '../../public/images/logo.png'
 
 function FooterComponent() {
   function getYear() {
@@ -37,7 +38,7 @@ function FooterComponent() {
       <div className="columns-container">
         <li className="column">
           <ul className="item">
-            <h1>Stake Dev</h1>
+            <img src={Logo} alt="Logo StakeDev" />
           </ul>
         </li>
 

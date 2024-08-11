@@ -1,6 +1,6 @@
 import FormContactComponent from "./FormContactComponent";
 import TitleSectionComponent from "./TitleSectionComponent";
-import Logo from "../../public/images/logo.png";
+import Logo from "/images/logo.png";
 // import EartCanvas from "./PlanetComponent";
 import "../css/contact-section.css";
 

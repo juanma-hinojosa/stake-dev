@@ -4,6 +4,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import "../css/navbar-component.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import Logo from "../../public/images/logo.png";
 function NavbarComponentTwo() {
   const [navbar, setNavbar] = useState(false);
   const navLinks = [
@@ -14,10 +15,10 @@ function NavbarComponentTwo() {
   ];
 
   const changeBackground = () => {
-    if (window.scrollY >= 50) {
+    if (window.scrollY >= 30) {
       setNavbar(true);
     } else {
-      setNavbar(false)
+      setNavbar(false);
     }
   };
 
@@ -34,9 +35,18 @@ function NavbarComponentTwo() {
   }
 
   return (
-    <header className={navbar ? 'header-container active poppins-regular' : 'header-container poppins-regular'} >
+    <header
+      className={
+        navbar
+          ? "header-container active poppins-regular"
+          : "header-container poppins-regular"
+      }
+    >
       <section>
-        <a href="#">LOGO</a>
+        <Link to="/" className="logo">
+          <img src={Logo} alt="Logo Stake Dev" />
+        </Link>
+        {/* <a href="#">LOGO</a> */}
         <div onClick={openMenu} className="abrir-menu" id="abrir-menu">
           <Icon className="icon-dark" icon="material-symbols-light:menu" />
         </div>
