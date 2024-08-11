@@ -10,6 +10,9 @@ import { cardPortfolio } from "./js/list";
 import FooterComponent from "./components/FooterComponent";
 import ServicesPage from "./pages/ServicesPage";
 import NosotrosPage from "./pages/Nosotros";
+import PreguntasFrecuentesPage from "./pages/AskPage";
+import BasesPage from "./pages/BasesPage";
+import ContactPage from "./pages/ContactPage";
 
 function App() {
   return (
@@ -18,10 +21,13 @@ function App() {
         <NavbarComponentTwo />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
           <Route path="/portfolio" element={<PortfolioPage />} />
           <Route path="/portfolio/:id" element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />} />   
           <Route path="/services" element={<ServicesPage />} />     
           <Route path="/about-us" element={<NosotrosPage />} />  
+          <Route path="/ask-us" element={<PreguntasFrecuentesPage />} />
+          <Route path="/bases" element={<BasesPage />} />
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <FooterComponent />

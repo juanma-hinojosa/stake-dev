@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../css/footer.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import Logo from '../../public/images/logo.png'
+import Logo from '/images/logo.png'
 
 function FooterComponent() {
   function getYear() {
@@ -21,7 +21,7 @@ function FooterComponent() {
   ];
 
   const infoLinks = [
-    { id: 0, path: "/legal", name: "contrato" },
+    { id: 0, path: "/ask-us", name: "Preguntas Frecuentes" },
     { id: 1, path: "/about-us", name: "nosotros" },
     { id: 2, path: "/portfolio", name: "trabajos" },
     { id: 3, path: "/bases", name: "bases y condiciones" },

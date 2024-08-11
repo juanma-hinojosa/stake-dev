@@ -11,6 +11,7 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
 
   return (
     <section>
+      <BannerComponent banner={cardPortfolio[id].banner} />
       <section className="section-width">
         <TitleSectionComponent
           subtitle={cardPortfolio[id].category}
@@ -18,8 +19,6 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
           parrafo={cardPortfolio[id].parrafo}
         />
       </section>
-
-      <BannerComponent banner={cardPortfolio[id].banner} />
       <MobileSection
         resumenMobile={cardPortfolio[id].resumenMobile}
         resumenDesktop={cardPortfolio[id].resumenDesktop}

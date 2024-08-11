@@ -4,7 +4,8 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import "../css/navbar-component.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import Logo from "../../public/images/logo.png";
+import Logo from "/images/logo.png";
+
 function NavbarComponentTwo() {
   const [navbar, setNavbar] = useState(false);
   const navLinks = [
@@ -46,7 +47,6 @@ function NavbarComponentTwo() {
         <Link to="/" className="logo">
           <img src={Logo} alt="Logo Stake Dev" />
         </Link>
-        {/* <a href="#">LOGO</a> */}
         <div onClick={openMenu} className="abrir-menu" id="abrir-menu">
           <Icon className="icon-dark" icon="material-symbols-light:menu" />
         </div>
