@@ -4,18 +4,23 @@ import video from "/images/video-contact.mp4";
 function ContactPage() {
   return (
     <>
-      {/* <HeroVideoComponent
+      {/* <section> */}
+      <HeroVideoComponent
         video={video}
-        h1="CONTACTANOS"
-        h2="CONTACTANOS H2"
-        p="Soy un parrafo de relleno"
-      /> */}
+        fraseUno="Comencemos ahora,"
+        spam="contactanos"
+        fraseDos="para comenzar tu crecimiento"
+        p='Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte en lo que necesites y resolver cualquier duda.'
+      />
+      {/* </section> */}
       <section>
-        <TitleSectionComponent
-          subtitle="CONTACTANOS"
-          title="Comunicate con Nosotros"
-          parrafo="Contactanos y hagamos crecer tu empresa"
-        />
+        <section className="section-width">
+          <TitleSectionComponent
+            subtitle="CONTACTANOS"
+            title="Comunicate con Nosotros"
+            parrafo="Contactanos y hagamos crecer tu empresa"
+          />
+        </section>
       </section>
     </>
   );
