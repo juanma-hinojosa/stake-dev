@@ -13,25 +13,33 @@ import NosotrosPage from "./pages/Nosotros";
 import PreguntasFrecuentesPage from "./pages/AskPage";
 import BasesPage from "./pages/BasesPage";
 import ContactPage from "./pages/ContactPage";
+//Importando archivos, lib y suspense
+// import "./config/i18next.config";
+// import { useTranslation } from "react-i18next";
+// import { Suspense } from "react";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-        <NavbarComponentTwo />
-        <Routes>
-          <Route exact path="/" element={<HomePage />} />
-          <Route path="/contact" element={<ContactPage />} />
-          <Route path="/portfolio" element={<PortfolioPage />} />
-          <Route path="/portfolio/:id" element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />} />   
-          <Route path="/services" element={<ServicesPage />} />     
-          <Route path="/about-us" element={<NosotrosPage />} />  
-          <Route path="/ask-us" element={<PreguntasFrecuentesPage />} />
-          <Route path="/bases" element={<BasesPage />} />
-          <Route path="*" element={<ErrorPage />} />
-        </Routes>
-        <FooterComponent />
-      </BrowserRouter>
+        {/* Colocammos todo dentro de la etiqueta suspense */}
+        <BrowserRouter>
+          <NavbarComponentTwo />
+          <Routes>
+            <Route exact path="/" element={<HomePage />} />
+            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route
+              path="/portfolio/:id"
+              element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />}
+            />
+            <Route path="/services" element={<ServicesPage />} />
+            <Route path="/about-us" element={<NosotrosPage />} />
+            <Route path="/ask-us" element={<PreguntasFrecuentesPage />} />
+            <Route path="/bases" element={<BasesPage />} />
+            <Route path="*" element={<ErrorPage />} />
+          </Routes>
+          <FooterComponent />
+        </BrowserRouter>
     </>
   );
 }

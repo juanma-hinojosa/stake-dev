@@ -8,7 +8,10 @@ function HeroVideoComponent(props) {
       <div className="info-vid">
         <div>
           <h1 className="oswald-title">
-            {props.fraseUno} <span>{props.spam}</span> {props.fraseDos}
+            {props.fraseUno}
+            <br />
+            <span>{props.spam}</span>
+            <br /> {props.fraseDos}
           </h1>
           <p className="poppins-light">{props.p}</p>
           <div className="button-container">
