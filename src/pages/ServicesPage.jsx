@@ -3,13 +3,6 @@ import HeroComponent from "../components/HeroComponent";
 import ServicesSection from "../components/ServicesSection";
 
 function ServicesPage() {
-  // const { text } = useTypewriter({
-  //   words: ["Developers", "Desing", "Etc"],
-  //   loop: {},
-  //   typeSpeed: 120,
-  //   deleteSpeed: 80,
-  // });
-
   return (
     <>
       <HeroComponent

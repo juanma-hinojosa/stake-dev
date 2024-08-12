@@ -14,7 +14,7 @@ function NavbarComponentTwo() {
     { id: 2, path: "/portfolio", name: "trabajos" },
     { id: 3, path: "/contact", name: "contacto" },
     //Ruta translate de prueba
-    { id: 4, path: "/services", name: "servicios" },
+    // { id: 4, path: "/services", name: "servicios" },
   ];
 
   const changeBackground = () => {

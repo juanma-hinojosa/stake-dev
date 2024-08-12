@@ -16,7 +16,9 @@ function HeroComponent(props) {
       <div className="hero-section-container">
         <div className="hero-contain">
           <h1 className="oswald-title">
-            {props.fraseUno} <span>{props.spam}</span> 
+            {props.fraseUno} 
+            <br />
+            <span>{props.spam}</span> 
             <br />
             {props.fraseDos}
           </h1>

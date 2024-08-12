@@ -33,6 +33,8 @@ function PortfolioPage() {
           />
         }
         fraseDos="para tu negocio"
+        name='Contactanos'
+        path='/contact'
       />
       <ProjectSection />
       <ContactSection />

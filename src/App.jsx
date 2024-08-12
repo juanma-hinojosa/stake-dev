@@ -13,6 +13,7 @@ import NosotrosPage from "./pages/Nosotros";
 import PreguntasFrecuentesPage from "./pages/AskPage";
 import BasesPage from "./pages/BasesPage";
 import ContactPage from "./pages/ContactPage";
+import ScrollToTop from "./components/scrollToTop";
 //Importando archivos, lib y suspense
 // import "./config/i18next.config";
 // import { useTranslation } from "react-i18next";
@@ -24,6 +25,7 @@ function App() {
         {/* Colocammos todo dentro de la etiqueta suspense */}
         <BrowserRouter>
           <NavbarComponentTwo />
+          <ScrollToTop />
           <Routes>
             <Route exact path="/" element={<HomePage />} />
             <Route path="/contact" element={<ContactPage />} />

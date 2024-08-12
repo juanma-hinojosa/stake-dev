@@ -3,6 +3,7 @@ import ContactSection from "../components/ContactSection";
 import TitleSectionComponent from "../components/TitleSectionComponent";
 import HeroVideoComponent from "../components/HeroVidComponent";
 import Video from "/images/video-nosotros.mp4";
+import { Typewriter } from "react-simple-typewriter";
 function NosotrosPage() {
   return (
     <>
@@ -18,10 +19,20 @@ function NosotrosPage() {
       /> */}
       <HeroVideoComponent
         video={Video}
-        fraseUno="Te esperamos,"
-        spam="nosotros"
-        fraseDos="te vamos a hacer crecer"
+        fraseUno="Somos"
+        spam={
+          <Typewriter
+            words={["Stake Dev", "Sowftare Developers", "Web Design"]}
+            loop={Infinity}
+            cursor
+            typeSpeed={120}
+            deleteSpeed={80}
+          />
+        }
+        fraseDos="Conocenos"
         p="En Stake Dev, transformamos tus ideas en éxitos. Con nuestro enfoque innovador y dedicación, estamos aquí para ayudarte a alcanzar tus metas y superar tus expectativas"
+        name="Contactanos"
+        path="/contact"
       />
       <section>
         <section className="section-width">
