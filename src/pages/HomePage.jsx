@@ -32,7 +32,7 @@ function HomePage() {
         video={Video}
         spam={
           <Typewriter
-            words={["Increible", "Espectacular", "Unica", "Personalizada", "Hecha a Medida"]}
+            words={["Unica", "Personalizada", "Hecha a Medida"]}
             loop={Infinity}
             cursor
             typeSpeed={120}
@@ -40,9 +40,9 @@ function HomePage() {
           />
         }
         fraseDos="para tu negocio"
-        p="  Para la creacioln de tu sitio web escuchamos que tenes en mente y te ayudamos a transformar esa idea en realidad pixel por pixel"
-        path="/portfolio"
-        name="Trabajos"
+        p="Para la creación de tu sitio web, escuchamos atentamente tus ideas y te ayudamos a transformarlas en realidad, pixel a pixel"
+        path="/contact"
+        name="Contactanos"
       />
       <ServicesSection />
       <ProjectSection />

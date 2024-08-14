@@ -10,8 +10,8 @@ function ContactSection() {
       <div className="section-width">
         <TitleSectionComponent
           subtitle="Contactanos"
-          title="No dudes en Contactarnos"
-          parrafo="Nos encantaria poder escuchar tus ideas y que tenes en mente para brindarte nuestra ayuda y dar un salto de calidad en tu negocio y poder crecer juntos en el mundo del desarrollo web"
+          title="No dudes en contactarnos"
+          parrafo="Nos encantaría escuchar tus ideas y ayudarte a dar un salto de calidad en tu negocio. En un mundo cada vez más digital, tener una fuerte presencia en la web es esencial para el crecimiento. Trabajemos juntos para asegurar que tu negocio destaque en línea"
         />
       </div>
       <div className="grid-contact">

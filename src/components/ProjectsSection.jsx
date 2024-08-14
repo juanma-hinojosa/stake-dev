@@ -9,8 +9,8 @@ function ProjectSection() {
       <div className="section-width">
         <TitleSectionComponent
           subtitle="Portafolio"
-          title="Nuestros Ultimos Trabajos"
-          parrafo="Estamos orgullosos de presentar nuestros trabajos para que puedas ver como trabajamos y ver los estandares de nuestros proyectos y la calidad que vas a recibir si trabajas con nosotros, te mostramos diferentes modelos en el transcurso para lograr tu aprobacion final"
+          title="Nuestros Últimos Trabajos"
+          parrafo="Estamos orgullosos de presentarte nuestros proyectos recientes. Descubre la calidad y los altos estándares que aplicamos en cada trabajo. Te mostramos diversas propuestas durante el proceso, asegurando que el resultado final cumpla con tus expectativas y más"
         />
       </div>
       <div className="grid-portfolio-container">

@@ -9,8 +9,7 @@ function CardServicesComponent(props) {
       </div>
       <h1 className="oswald-title-card">{props.title}</h1>
       <p className="poppins-semibold">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus
-        officiis voluptatem reprehenderit, minus quia tenetur! Iste, hic libero
+      {props.parrafo}
       </p>
       <div className="link-icon-container">
         <Icon className="link-icon" icon="solar:map-arrow-up-bold" />

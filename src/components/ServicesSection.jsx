@@ -10,13 +10,16 @@ function ServicesSection() {
         <TitleSectionComponent
           subtitle="Servicios"
           title="Alcanzando tus expectativas"
-          parrafo="Vamos cumplir tus expectativas y que no recurras a otras agencias para tus proyectos web"
+          parrafo="Cumplimos con tus necesidades para que no tengas que buscar en otra parte. Confía en nosotros para tus proyectos web y obtén resultados que superen tus expectativas"
         />
         <div className="services-grid-container">
           {cardServices.map((service) => (
-            <CardServicesComponent key={service.id} 
-            icon = {service.icon}
-            title={service.title} />
+            <CardServicesComponent
+              key={service.id}
+              icon={service.icon}
+              title={service.title}
+              parrafo={service.parrafo}
+            />
           ))}
         </div>
       </div>
