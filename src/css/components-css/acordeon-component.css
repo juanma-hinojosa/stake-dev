@@ -18,8 +18,15 @@
 }
 
 .accordion-icon {
-  font-size: 20px;
+  font-size: 30px;
   /* transition: transform 0.3s ease; */
+color: var(--verde-oscuro);
+transition: .3s;
+}
+
+.accordion-icon:hover {
+  color: #cd073f;
+  ;
 }
 
 /* .accordion-icon.open {

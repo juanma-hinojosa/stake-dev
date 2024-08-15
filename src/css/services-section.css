@@ -1,7 +1,3 @@
-section {
-  background-color: var(--background-oscuro);
-}
-
 section .services-grid-container {
   display: grid;
   gap: 2rem;

@@ -11,9 +11,12 @@ function CardServicesComponent(props) {
       <p className="poppins-semibold">
       {props.parrafo}
       </p>
+      {/*
       <div className="link-icon-container">
         <Icon className="link-icon" icon="solar:map-arrow-up-bold" />
       </div>
+      */}
+      
     </figure>
   );
 }

@@ -1,7 +1,13 @@
 .img-porfolio-container{
   width: 100%;
-  background-color: rgba(155, 152, 152, 0.233);
-  padding: 20px 40px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  transition: .3s;
+}
+
+.img-porfolio-container:hover {
+  border: 1px solid var(--verde-oscuro)
 }
 
 .img-porfolio-container > img {
@@ -9,7 +15,7 @@
 }
 
 .card-container {
-  color: #fff;
+  color: var(--texto);
 }
 
 .link-id {
@@ -23,7 +29,7 @@
 }
 
 .link-id:hover {
-  color: #02706b;
+  color: #b30f0f;
 }
 
 .tecnologia-list {

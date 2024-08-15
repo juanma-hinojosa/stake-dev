@@ -14,12 +14,19 @@ function ContactSection() {
           parrafo="Nos encantaría escuchar tus ideas y ayudarte a dar un salto de calidad en tu negocio. En un mundo cada vez más digital, tener una fuerte presencia en la web es esencial para el crecimiento. Trabajemos juntos para asegurar que tu negocio destaque en línea"
         />
       </div>
-      <div className="grid-contact">
-        <FormContactComponent />
-        <figcaption>
+      <FormContactComponent />
+     
+        
+
+        {/* 
+         <div className="grid-contact">
+        
+<figcaption>
           <img src={Logo} alt="Logo StakeDev" />
         </figcaption>
+        
       </div>
+      */}
     </section>
   );
 }

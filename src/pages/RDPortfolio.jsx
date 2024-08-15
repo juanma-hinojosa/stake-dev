@@ -23,8 +23,10 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
         resumenMobile={cardPortfolio[id].resumenMobile}
         resumenDesktop={cardPortfolio[id].resumenDesktop}
       />
-      <ButtonComponent path="/portfolio" name="Volver" />
-      <ContactSection />
+
+      <section className="section-width">
+        <ButtonComponent path="/portfolio" name="Volver" />
+      </section>
     </section>
   );
 }

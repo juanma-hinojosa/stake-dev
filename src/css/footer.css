@@ -11,6 +11,10 @@ footer {
   gap: 2rem;
 }
 
+.columns-container .column ul:nth-child(1) img {
+  width: 50%;
+}
+
 .columns-container .column h1 {
   font-size: 1.6rem;
   color: #fff;

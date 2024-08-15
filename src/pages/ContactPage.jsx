@@ -2,6 +2,7 @@ import { Typewriter } from "react-simple-typewriter";
 import HeroVideoComponent from "../components/HeroVidComponent";
 import TitleSectionComponent from "../components/TitleSectionComponent";
 import video from "/images/video-contact.mp4";
+import ContactSection from "../components/ContactSection";
 function ContactPage() {
   return (
     <>
@@ -19,7 +20,7 @@ function ContactPage() {
           />
         }
         fraseDos="No Esperes mas"
-        p='Si tienes alguna pregunta o necesitas más información, no dudes en contactarnos. Estamos aquí para ayudarte en lo que necesites y resolver cualquier duda.'
+        p='Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte en lo que necesites y resolver cualquier duda que tengas'
         name='Trabajos'
         path='/portfolio'
       />
@@ -32,6 +33,11 @@ function ContactPage() {
             parrafo="Contactanos y hagamos crecer tu empresa"
           />
         </section>
+      
+      
+      <section className="section-width">
+      <ContactSection />
+      </section>
       </section>
     </>
   );

@@ -17,7 +17,8 @@ function PreguntasFrecuentesPage() {
         <section className="nav-preguntas-container">
           <aside>
             <li
-            style={{color:'white', listStyle:'none'}}
+            className="montserrat-subtitle"
+            style={{color:"var(--texto)", listStyle:'none'}}
             >
               <ul>Duda 1</ul>
               <ul>Duda 2</ul>

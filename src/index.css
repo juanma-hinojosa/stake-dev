@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
-  --celeste: #00E9DE;
-  --verde-oscuro: #00837D;
-  --background-oscuro: #01001F;
+  --celeste: #2867ac;
+  --verde-oscuro: #e81753;
+  --background-oscuro: #fbfbfb;
+  --texto: #212121;
 }
-
+ 
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -123,6 +124,14 @@
   font-style: normal;
 }
 
+.montserrat-subtitle-uno {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+
 /* // <uniquifier>: Use a unique and descriptive class name */
 
 .oswald-title {
@@ -130,6 +139,14 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+
+.oswald-title-uno {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1px;
 }
 
 .oswald-title-card {

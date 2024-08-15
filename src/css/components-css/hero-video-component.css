@@ -34,10 +34,11 @@
   max-width: 550px;
   line-height: 1.6rem;
   font-size: 15pt;
+  color: #fff;
 }
 
-span {
-  color: var(--celeste);
+.box-video .info-vid .info-div-wrapper h1 span {
+  color: var(--verde-oscuro);
 }
 
 @media (max-width: 700px) {

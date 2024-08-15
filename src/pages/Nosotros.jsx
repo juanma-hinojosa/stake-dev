@@ -61,7 +61,7 @@ function NosotrosPage() {
           negocio hacia el éxito.”
         </p>
       </section>
-      <ContactSection />
+      
     </>
   );
 }

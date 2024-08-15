@@ -10,7 +10,10 @@
 }
 
 .header-container.active {
-  background-color: var(--background-oscuro);
+  background-color: var(--texto);
+  -webkit-box-shadow: 0px 10px 40px -14px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 40px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 40px -14px rgba(0, 0, 0, 0.75);
 }
 
 .header-container section {
@@ -28,7 +31,8 @@
 .logo {
   max-width: 4.4rem;
 }
-.nav-list { 
+
+.nav-list {
   list-style-type: none;
   display: flex;
   gap: 1rem;
@@ -45,7 +49,7 @@
 }
 
 .nav-list li a:hover {
-  color: var(--celeste);
+  color: var(--verde-oscuro);
 }
 
 .abrir-menu,
@@ -54,11 +58,16 @@
 }
 
 @media screen and (max-width: 727px) {
+
   .abrir-menu,
   .cerrar-menu {
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #fff;
+
   }
+
   .nav-container {
     opacity: 0;
     visibility: hidden;
@@ -74,7 +83,7 @@
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--background-oscuro);
+    background-color: var(--texto);
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     z-index: 999999999;

@@ -1,5 +1,5 @@
 .title-wrapper-component {
-  color: #fff;
+  color: #1a1a1a;
   padding: 50px 0;
 }
 
@@ -12,9 +12,9 @@ h1 {
   font-size: 57px;
 }
 
-p {
+.title-wrapper-component p {
   max-width: 800px;
-  color: #eee2e2;
+  color: #2d2a2a;
 }
 
 .star {

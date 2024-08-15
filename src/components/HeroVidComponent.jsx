@@ -15,7 +15,7 @@ function HeroVideoComponent(props) {
           </h1>
           <p className="poppins-light">{props.p}</p>
           <div className="button-container">
-            {/* <ButtonComponent path="/portfolio" name="Trabajos" /> */}
+            {/* */}
             <ButtonComponent path={props.path} name={props.name} />
           </div>
         </div>

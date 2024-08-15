@@ -10,7 +10,7 @@ function ProjectSection() {
         <TitleSectionComponent
           subtitle="Portafolio"
           title="Nuestros Últimos Trabajos"
-          parrafo="Estamos orgullosos de presentarte nuestros proyectos recientes. Descubre la calidad y los altos estándares que aplicamos en cada trabajo. Te mostramos diversas propuestas durante el proceso, asegurando que el resultado final cumpla con tus expectativas y más"
+          parrafo="Nos complace presentarte nuestros proyectos recientes. Descubre la calidad y los altos estándares que aplicamos en cada trabajo. Durante el proceso, te mostramos diversas propuestas para asegurarnos de que el resultado final no solo cumpla, sino que supere tus expectativas"
         />
       </div>
       <div className="grid-portfolio-container">

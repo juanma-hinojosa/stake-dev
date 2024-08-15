@@ -23,8 +23,7 @@ function FooterComponent() {
   const infoLinks = [
     { id: 0, path: "/ask-us", name: "Preguntas Frecuentes" },
     { id: 1, path: "/about-us", name: "nosotros" },
-    { id: 2, path: "/portfolio", name: "trabajos" },
-    { id: 3, path: "/bases", name: "bases y condiciones" },
+    { id: 2, path: "/portfolio", name: "trabajos" }
   ];
   const iconsSocial = [
     { id: 0, icon: "ic:baseline-facebook" },

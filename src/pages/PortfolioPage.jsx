@@ -20,7 +20,7 @@ function PortfolioPage() {
       /> */}
       <HeroVideoComponent
         video={Video}
-        p="Te invitamos a que veas todos los proyectos en los que trabajamos y nos sentimos orgullosos que veas"
+        p="Te invitamos a explorar todos los proyectos en los que hemos trabajado. Nos entusiasma que puedas ver el resultado de nuestro esfuerzo y dedicación"
         fraseUno="Contruyamos tus"
         // spam="proyectos"
         spam={
@@ -37,7 +37,7 @@ function PortfolioPage() {
         path='/contact'
       />
       <ProjectSection />
-      <ContactSection />
+      
     </>
   );
 }
