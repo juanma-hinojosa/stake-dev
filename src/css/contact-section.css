@@ -1,10 +1,10 @@
 .contact-container .grid-contact {
   display: grid;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   gap: 2rem;
   padding: 0 20px;
-}
+} 
 
 @media (min-width: 800px) {
   .contact-container .grid-contact {

@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 // import { Link } from "react-router-dom";
 import "../css/hero-component.css";
-import ButtonComponent from "./ButtonComponent";
+// import ButtonComponent from "./ButtonComponent";
 
 function HeroComponent(props) {
   return (
@@ -13,7 +13,7 @@ function HeroComponent(props) {
         url(${props.img})`,
       }}
     >
-      <div className="hero-section-container">
+      {/* <div className="hero-section-container">
         <div className="hero-contain">
           <h1 className="oswald-title">
             {props.fraseUno} 
@@ -27,7 +27,7 @@ function HeroComponent(props) {
             <ButtonComponent path={props.path} name={props.name} />
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }

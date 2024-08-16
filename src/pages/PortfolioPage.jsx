@@ -1,9 +1,9 @@
 import { Typewriter } from "react-simple-typewriter";
-import ContactSection from "../components/ContactSection";
 // import HeroComponent from "../components/HeroComponent";
 import HeroVideoComponent from "../components/HeroVidComponent";
 import ProjectSection from "../components/ProjectsSection";
-import Video from "/images/video-proyect.mp4";
+// import Video from "/images/video-proyect.mp4";
+import SectionCardContact from "../components/SectionCardContact";
 // import TitleSectionComponent from "../components/TitleSectionComponent";
 
 function PortfolioPage() {
@@ -19,7 +19,7 @@ function PortfolioPage() {
         fraseDos="para tu negocio"
       /> */}
       <HeroVideoComponent
-        video={Video}
+        video='https://i.imgur.com/hYXZbGc.mp4'
         p="Te invitamos a explorar todos los proyectos en los que hemos trabajado. Nos entusiasma que puedas ver el resultado de nuestro esfuerzo y dedicación"
         fraseUno="Contruyamos tus"
         // spam="proyectos"
@@ -37,7 +37,7 @@ function PortfolioPage() {
         path='/contact'
       />
       <ProjectSection />
-      
+      <SectionCardContact />
     </>
   );
 }

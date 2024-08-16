@@ -1,12 +1,14 @@
 import FormContactComponent from "./FormContactComponent";
 import TitleSectionComponent from "./TitleSectionComponent";
-import Logo from "/images/logo.png";
+// import Logo from "/images/logo.png";
 // import EartCanvas from "./PlanetComponent";
 import "../css/contact-section.css";
 
 function ContactSection() {
   return (
-    <section className="contact-container">
+    <section
+    //  className="contact-container"
+    >
       <div className="section-width">
         <TitleSectionComponent
           subtitle="Contactanos"
@@ -15,18 +17,6 @@ function ContactSection() {
         />
       </div>
       <FormContactComponent />
-     
-        
-
-        {/* 
-         <div className="grid-contact">
-        
-<figcaption>
-          <img src={Logo} alt="Logo StakeDev" />
-        </figcaption>
-        
-      </div>
-      */}
     </section>
   );
 }

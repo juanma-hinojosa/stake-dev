@@ -4,7 +4,7 @@ import ContactSection from "../components/ContactSection";
 import ProjectSection from "../components/ProjectsSection";
 import ServicesSection from "../components/ServicesSection";
 import HeroVideoComponent from "../components/HeroVidComponent";
-import Video from '/images/inicio-desk.mp4'
+// import Video from '/images/inicio-desk.mp4'
 
 function HomePage() {
   return (
@@ -29,7 +29,7 @@ function HomePage() {
       /> */}
       <HeroVideoComponent
         fraseUno="Desarollemos tu pagina"
-        video={Video}
+        video='https://i.imgur.com/lyNaU6V.mp4'
         spam={
           <Typewriter
             words={["Unica", "Personalizada", "Hecha a Medida"]}

@@ -13,9 +13,12 @@ function HeroVideoComponent(props) {
             <span>{props.spam}</span>
             <br /> {props.fraseDos}
           </h1>
-          <p className="poppins-light">{props.p}</p>
-          <div className="button-container">
-            {/* */}
+          <p className="poppins-light" 
+          // style={{ marginBottom: "30px" }}
+          >
+            {props.p}
+          </p>
+          <div className="button-container" style={{ marginTop: "30px" }}>
             <ButtonComponent path={props.path} name={props.name} />
           </div>
         </div>

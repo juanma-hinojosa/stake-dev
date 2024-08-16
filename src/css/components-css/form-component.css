@@ -1,12 +1,16 @@
 
 /* Estilos generales del formulario */
 .my-form {
-    max-width: 600px;
+    max-width: 730px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 60px 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #f9f9f9;
+}
+
+.my-form label {
+    margin-bottom: 20px;
 }
 
 /* Estilos de los campos de entrada y área de texto */
@@ -15,7 +19,7 @@
 .my-form textarea {
     width: 100%;
     padding: 10px;
-    border: 5px solid #ccc;
+    border: 5px solid var(--verde-oscuro);
     border-radius: 5px;
     box-sizing: border-box;
     margin-bottom: 15px;
@@ -28,10 +32,11 @@
 
 /* Estilos del botón */
 .my-form button {
+    width: 100%;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: var(--celeste);
     color: #fff;
     font-size: 16px;
     cursor: pointer;
@@ -39,7 +44,7 @@
 }
 
 .my-form button:hover {
-    background-color: #0056b3;
+    background-color: #0067c7;
 }
 
 /* Media queries para hacer el formulario responsive */

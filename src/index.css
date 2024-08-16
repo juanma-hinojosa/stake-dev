@@ -149,6 +149,15 @@
   letter-spacing: 1px;
 }
 
+.oswald-title-card-contact {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1px;
+  font-size: 2.1rem;
+}
+
 .oswald-title-card {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
