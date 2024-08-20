@@ -3,20 +3,18 @@ import HeroVideoComponent from "../components/HeroVidComponent";
 // import Video from "/images/video-nosotros.mp4";
 import { Typewriter } from "react-simple-typewriter";
 import SectionCardContact from "../components/SectionCardContact";
+import CommentGridSection from "../components/CommentGridSection";
 
 function NosotrosPage() {
+  const img =
+    "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  // const img = "https://images.unsplash.com/photo-1542762933-ab3502717ce7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+  // const img = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   return (
     <>
-      {/* <HeroComponent
-        img="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        fraseUno="Te esperamos,"
-        spam="nosotros"
-        fraseDos="te vamos a hacer crecer"
-        p="En Stake Dev, transformamos tus ideas en éxitos. Con nuestro enfoque innovador y dedicación, estamos aquí para ayudarte a alcanzar tus metas y superar tus expectativas"
-        //   p="¡Contactate con nosotros y descubre un mundo de oportunidades! Estamos aquí para escucharte y ofrecerte soluciones a medida. ¡Tu satisfacción es nuestra misión!"
-        path="/contact"
-        name="Contactanos"
-      /> */}
+      {/* https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
+      {/* https://images.unsplash.com/photo-1542762933-ab3502717ce7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
+      {/* https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
       <HeroVideoComponent
         video="https://i.imgur.com/5bCS1hW.mp4"
         fraseUno="Somos"
@@ -63,6 +61,23 @@ function NosotrosPage() {
             tu negocio hacia el éxito.”
           </p>
         </section>
+      </section>
+      <div
+        className="banner-img"
+        style={{
+          backgroundImage: `  
+          linear-gradient(rgba(232, 23, 63, 0.9), rgba(159, 69, 86, 0.9)),
+          url(${img})`,
+          // backgroundColor: 'red',
+          width: "100%",
+          height: "60vh",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+        }}
+      ></div>
+      <section>
+        <CommentGridSection />
       </section>
       <SectionCardContact />
     </>
