@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Icon } from "@iconify/react/dist/iconify.js";
+// import { Icon } from "@iconify/react/dist/iconify.js";
 import "../css/components-css/section-grid-comment.css";
+import VideoComponent from '/images/nosotros-component.mp4'
 function CommentGridSection() {
   return (
     <section className="section-width">
@@ -8,9 +9,9 @@ function CommentGridSection() {
         <figure className="frase-container">
           <h1 className="title oswald-title-comment">
             Nuestro Proposito
-            <span>
+            {/* <span>
               <Icon className="star" icon="streamline:star-2-solid" />
-            </span>
+            </span> */}
           </h1>
           <p className="frase-p poppins-regular-italic">
             <span className="comillas">"</span>
@@ -21,7 +22,9 @@ function CommentGridSection() {
         <figure 
         className="video-comment"
         >
-            <video src="https://videos.pexels.com/video-files/8774518/8774518-uhd_2560_1440_25fps.mp4"
+            <video 
+            // src="https://videos.pexels.com/video-files/8774518/8774518-uhd_2560_1440_25fps.mp4"
+            src={VideoComponent}
             autoPlay
             loop
             muted

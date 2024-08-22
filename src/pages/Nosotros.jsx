@@ -4,6 +4,7 @@ import HeroVideoComponent from "../components/HeroVidComponent";
 import { Typewriter } from "react-simple-typewriter";
 import SectionCardContact from "../components/SectionCardContact";
 import CommentGridSection from "../components/CommentGridSection";
+import NosotrosCardRSection from "../components/NosotrosCardRSection";
 
 function NosotrosPage() {
   const img =
@@ -12,9 +13,6 @@ function NosotrosPage() {
   // const img = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
   return (
     <>
-      {/* https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
-      {/* https://images.unsplash.com/photo-1542762933-ab3502717ce7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
-      {/* https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D */}
       <HeroVideoComponent
         video="https://i.imgur.com/5bCS1hW.mp4"
         fraseUno="Somos"
@@ -37,11 +35,16 @@ function NosotrosPage() {
           <TitleSectionComponent
             subtitle="NOSOTROS"
             title="Acerca de Nosotros"
-            parrafo="Desde nuestros humildes comienzos, hemos crecido y evolucionado gracias a nuestra pasión y dedicación. Nuestra historia es un testimonio de innovación y perseverancia. Únete a nosotros para ser parte de un legado de éxito y progreso continuo"
           />
         </section>
         <section className="section-width">
           <p className="poppins-regular">
+            Desde nuestros humildes comienzos, hemos crecido y evolucionado
+            gracias a nuestra pasión y dedicación. Nuestra historia es un
+            testimonio de innovación y perseverancia. Únete a nosotros para ser
+            parte de un legado de éxito y progreso continuo
+            <br />
+            <br />
             En Stake Dev, somos un equipo apasionado por transformar ideas en
             éxitos digitales. Con un enfoque en la innovación y la dedicación
             constante, nos especializamos en desarrollo web, diseño UX/UI, y
@@ -55,10 +58,6 @@ function NosotrosPage() {
             calidad, sino que también marque la diferencia en el competitivo
             mundo digital. <br />
             <br />
-            Estamos aquí para acompañarte en cada etapa, desde la idea inicial
-            hasta el despliegue final y más allá. En Stake Dev, no solo
-            construimos sitios web; creamos experiencias digitales que impulsan
-            tu negocio hacia el éxito.”
           </p>
         </section>
       </section>
@@ -80,6 +79,9 @@ function NosotrosPage() {
         <CommentGridSection />
       </section>
       <SectionCardContact />
+      <section>
+        <NosotrosCardRSection />
+      </section>
     </>
   );
 }

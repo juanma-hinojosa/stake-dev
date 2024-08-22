@@ -2,6 +2,7 @@ import AccordionComponent from "../components/AcordeonComponent";
 import HeroComponent from "../components/HeroComponent";
 import TitleSectionComponent from "../components/TitleSectionComponent";
 import "../css/preguntas-page.css";
+import { preguntasList } from "../js/list";
 
 function PreguntasFrecuentesPage() {
   return (
@@ -22,25 +23,22 @@ function PreguntasFrecuentesPage() {
               className="montserrat-subtitle"
               style={{ color: "var(--texto)", listStyle: "none" }}
             >
-              <ul>Duda 1</ul>
-              <ul>Duda 2</ul>
-              <ul>Duda 3</ul>
-              <ul>Duda 4</ul>
+              {preguntasList.map((pregunta, key) => (
+                <ul key={key}>
+                  <a href={`#${pregunta.id}`}>{pregunta.titulo}</a>
+                </ul>
+              ))}
             </li>
           </aside>
           <section>
-            <AccordionComponent
-              title="Como comenzamos?"
-              description="Contacte con nosotros por nuestros canales oficiales y en la brevedad marcamos una reunion"
-            />
-            <AccordionComponent
-              title="Ya tengo una pagina con mi dominio?"
-              description="Contacte con nosotros para gestionar una pagina nueva y mudar tu dominio"
-            />
-            <AccordionComponent
-              title="Porque debo tener una pagina?"
-              description="Esta demostrado que la presencia online aumenta la capicidad de ventas"
-            />
+            {preguntasList.map((pregunta, key) => (
+              <AccordionComponent
+                key={key}
+                id={pregunta.id}
+                title={pregunta.pregunta}
+                description={pregunta.respuesta}
+              />
+            ))}
           </section>
         </section>
       </section>

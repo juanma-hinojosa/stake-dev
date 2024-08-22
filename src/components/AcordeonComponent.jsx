@@ -12,7 +12,7 @@ function AccordionComponent (props) {
   };
 
   return (
-    <div className="accordion">
+    <div className="accordion" id={props.id}>
       <div className="accordion-header" onClick={toggleAccordion}>
         <h2
         className='oswald-title-uno'

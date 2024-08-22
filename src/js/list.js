@@ -106,3 +106,96 @@ export const cardPortfolio = [
     resumenMobile: "Version de celular de la pagina y resumen",
   },
 ];
+
+export const preguntasList = [
+  {
+    id: 1,
+    titulo: "Costo del desarrollo web",
+    pregunta: "¿Cuál sería el costo de desarrollar mi página web?",
+    respuesta:
+      "El costo de desarrollar una página web puede variar dependiendo de factores como el tipo de sitio web, las funcionalidades que desees, el diseño, y si necesitas servicios adicionales como mantenimiento o SEO. Para darte un presupuesto preciso, sería ideal discutir tus necesidades y expectativas en detalle.",
+  },
+  {
+    id: 2,
+    titulo: "Tiempo de desarrollo",
+    pregunta: "¿Cuánto tiempo estimo que tomará completar la página web?",
+    respuesta:
+      "El tiempo de desarrollo depende del alcance del proyecto. Un sitio web simple puede tardar unas pocas semanas, mientras que proyectos más complejos pueden llevar varios meses. Es importante considerar también el tiempo necesario para revisiones y ajustes.",
+  },
+  {
+    id: 3,
+    titulo: "Tipo de sitio web recomendado",
+    pregunta: "¿Qué tipo de sitio web recomendarías para mis necesidades?",
+    respuesta:
+      "Esto depende de tus objetivos. Si buscas un sitio informativo, un blog o una página empresarial podría ser ideal. Si planeas vender productos, una tienda en línea sería más adecuada. Durante nuestra consulta inicial, podríamos discutir tus metas y definir el tipo de sitio que mejor te convenga.",
+  },
+  {
+    id: 4,
+    titulo: "Información necesaria para comenzar",
+    pregunta:
+      "¿Qué información o recursos necesito proporcionar para que podamos empezar?",
+    respuesta:
+      "Necesitaré que me proporciones el contenido que deseas incluir, como textos, imágenes, y cualquier material gráfico. También sería útil recibir información sobre tu marca, tus objetivos, y cualquier preferencia de diseño que tengas.",
+  },
+  {
+    id: 5,
+    titulo: "Compatibilidad móvil",
+    pregunta:
+      "¿Mi página web será compatible y se verá bien en dispositivos móviles?",
+    respuesta:
+      "Absolutamente, todos los sitios web que desarrollo son responsivos, lo que significa que estarán optimizados para verse y funcionar correctamente en dispositivos móviles, tabletas, y computadoras de escritorio.",
+  },
+  {
+    id: 6,
+    titulo: "Plataforma o tecnología",
+    pregunta:
+      "¿Qué plataforma o tecnología utilizarás para crear mi sitio web?",
+    respuesta:
+      "La plataforma o tecnología dependerá de tus necesidades. Por ejemplo, si buscas una solución flexible y fácil de gestionar, podría recomendarte WordPress. Para tiendas en línea, Shopify o WooCommerce son opciones populares. Discutiré contigo las mejores opciones antes de comenzar.",
+  },
+  {
+    id: 7,
+    titulo: "Servicios de mantenimiento",
+    pregunta:
+      "¿Qué servicios están incluidos en el mantenimiento del sitio web?",
+    respuesta:
+      "El mantenimiento puede incluir actualizaciones de software, copias de seguridad regulares, monitoreo de seguridad, y pequeños cambios en el contenido. Podemos adaptar el plan de mantenimiento según lo que necesites para mantener tu sitio web en óptimas condiciones.",
+  },
+  {
+    id: 8,
+    titulo: "Actualización de contenido",
+    pregunta:
+      "¿Tendré la posibilidad de actualizar el contenido de mi sitio web por mi cuenta?",
+    respuesta:
+      "Sí, generalmente los sitios web se diseñan para que los propietarios puedan actualizar el contenido fácilmente a través de un panel de administración. Ofrezco capacitación básica para que te sientas cómodo realizando estas actualizaciones.",
+  },
+  {
+    id: 9,
+    titulo: "Proceso de diseño y desarrollo",
+    pregunta: "¿Cómo será el proceso de diseño y desarrollo de la página web?",
+    respuesta:
+      "El proceso suele comenzar con una reunión inicial para entender tus necesidades. Luego, pasamos a la fase de diseño, donde te presento maquetas y opciones. Una vez aprobado el diseño, comenzamos el desarrollo. Finalmente, hacemos pruebas y ajustes antes de lanzar el sitio. Hay un lapso de tiempo entre la primera reunión y la muestra del diseño/maqueta.",
+  },
+  {
+    id: 10,
+    titulo: "Optimización para SEO",
+    pregunta: "¿El sitio web estará optimizado para motores de búsqueda (SEO)?",
+    respuesta:
+      "Sí, el SEO es una parte importante del desarrollo web. Implemento prácticas recomendadas de SEO, como la optimización de palabras clave, meta descripciones, y la configuración adecuada de URL. Esto ayuda a mejorar la visibilidad de tu sitio en los motores de búsqueda.",
+  },
+  {
+    id: 11,
+    titulo: "Integración con redes sociales",
+    pregunta:
+      "¿Será posible integrar mi sitio web con redes sociales u otras herramientas?",
+    respuesta:
+      "Sí, puedo integrar tu sitio web con tus cuentas de redes sociales, herramientas de análisis como Google Analytics, sistemas de correo electrónico, y otras aplicaciones que uses para gestionar tu negocio.",
+  },
+  {
+    id: 12,
+    titulo: "Seguridad del sitio web",
+    pregunta: "¿Cómo te encargarás de la seguridad de mi sitio web?",
+    respuesta:
+      "La seguridad es una prioridad. Implemento medidas como la instalación de certificados SSL, el uso de contraseñas seguras, actualizaciones regulares del software, y plugins de seguridad para proteger tu sitio contra posibles amenazas.",
+  },
+];

@@ -3,3 +3,17 @@
     grid-template-columns: 1fr 2fr;
     padding-inline: 20px;
 }
+
+.preguntas-frecuentes-container section .nav-preguntas-container aside li ul {
+    margin-bottom: 10px;
+}
+
+.preguntas-frecuentes-container section .nav-preguntas-container aside li ul a {
+    text-decoration: none;
+    color: var(--texto);
+    transition: .3s;
+}
+
+.preguntas-frecuentes-container section .nav-preguntas-container aside li ul a:hover {
+    color: var(--verde-oscuro);
+}
