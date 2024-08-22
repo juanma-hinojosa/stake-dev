@@ -1,25 +1,26 @@
-.contact-container .grid-contact {
+ .grid-contact {
   display: grid;
   max-width: 1200px;
   margin: 0 auto;
   gap: 2rem;
-  padding: 0 20px;
 } 
 
 @media (min-width: 800px) {
-  .contact-container .grid-contact {
+   .grid-contact {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* @media (min-width: 650px) {
-  .contact-container .grid-contact {
+@media (min-width: 650px) {
+   .grid-contact {
     grid-template-columns: repeat(2, 1fr);
-  }
-} */
+    /* padding: 0 20px; */
 
-@media (max-width: 860px) {
-  .contact-container .grid-contact {
+  }
+}
+
+/* @media (max-width: 860px) {
+   .grid-contact {
     display: flex;
     flex-direction: column-reverse;
   }
@@ -32,4 +33,4 @@
   figcaption img {
     width: 30%;
   }
-}
+} */

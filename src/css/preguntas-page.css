@@ -1,19 +1,35 @@
 .preguntas-frecuentes-container section .nav-preguntas-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    padding-inline: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-inline: 20px;
 }
 
 .preguntas-frecuentes-container section .nav-preguntas-container aside li ul {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .preguntas-frecuentes-container section .nav-preguntas-container aside li ul a {
-    text-decoration: none;
-    color: var(--texto);
-    transition: .3s;
+  text-decoration: none;
+  color: var(--texto);
+  transition: 0.3s;
 }
 
-.preguntas-frecuentes-container section .nav-preguntas-container aside li ul a:hover {
-    color: var(--verde-oscuro);
+.preguntas-frecuentes-container
+  section
+  .nav-preguntas-container
+  aside
+  li
+  ul
+  a:hover {
+  color: var(--verde-oscuro);
+}
+
+@media (max-width: 800px) {
+  .preguntas-frecuentes-container section .nav-preguntas-container {
+    grid-template-columns: auto;
+  }
+
+  .preguntas-frecuentes-container section .nav-preguntas-container aside {
+    display: none;
+  }
 }

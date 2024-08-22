@@ -7,9 +7,13 @@ import "../css/contact-section.css";
 function ContactSection() {
   return (
     <section
-    //  className="contact-container"
+     className="grid-contact"
+    // className="section-width"
     >
-      <div className="section-width">
+
+      <div
+      // className="section-width"
+      >
         <TitleSectionComponent
           subtitle="Contactanos"
           title="No dudes en contactarnos"

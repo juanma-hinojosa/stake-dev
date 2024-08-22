@@ -1,6 +1,6 @@
 import { Typewriter } from "react-simple-typewriter";
 import HeroVideoComponent from "../components/HeroVidComponent";
-import TitleSectionComponent from "../components/TitleSectionComponent";
+// import TitleSectionComponent from "../components/TitleSectionComponent";
 // import video from "/images/video-contact.mp4";
 import ContactSection from "../components/ContactSection";
 function ContactPage() {
@@ -25,19 +25,23 @@ function ContactPage() {
         path="/portfolio"
       />
       {/* </section> */}
-      <section>
+      {/* <section>
         <section className="section-width">
           <TitleSectionComponent
             subtitle="CONTACTANOS"
             title="Comunicate con Nosotros"
             parrafo="Contactanos y hagamos crecer tu empresa"
           />
-        </section>
+        </section> */}
 
-        <section className="section-width">
-          <ContactSection />
-        </section>
+      <section
+        style={{
+          padding: "40px 0",
+        }}
+      >
+        <ContactSection />
       </section>
+      {/* </section> */}
     </>
   );
 }

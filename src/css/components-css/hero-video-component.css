@@ -1,6 +1,6 @@
 .box-video {
   position: relative;
-  max-height: 100vh;
+  min-height: 100vh;
   color: aliceblue;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }

@@ -29,7 +29,7 @@ function HomePage() {
       /> */}
       <HeroVideoComponent
         fraseUno="Desarollemos tu pagina"
-        video='https://i.imgur.com/lyNaU6V.mp4'
+        video="https://i.imgur.com/lyNaU6V.mp4"
         spam={
           <Typewriter
             words={["Unica", "Personalizada", "Hecha a Medida"]}
@@ -46,7 +46,13 @@ function HomePage() {
       />
       <ServicesSection />
       <ProjectSection />
-      <ContactSection />
+      <section  
+      style={{
+        padding: '40px 0'
+      }}
+      >
+        <ContactSection />
+      </section>
     </>
   );
 }

@@ -16,8 +16,25 @@
   font-size: 1.2rem;
 }
 
-@media (min-width: 650px) {
-  .card-reverse {
+.card-reverse .card-parrafo .grid-card-numbers {
+  display: grid;
+  gap: 1rem;
+}
+
+.card-reverse .card-parrafo .grid-card-numbers .card-number {
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (min-width: 450px) {
+  /* .card-reverse {
+    grid-template-columns: repeat(2, 1fr);
+  } */
+  .card-reverse .card-parrafo .grid-card-numbers {
     grid-template-columns: repeat(2, 1fr);
   }
 }
@@ -25,6 +42,9 @@
 @media (min-width: 990px) {
   .card-reverse {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .card-reverse .card-parrafo .grid-card-numbers {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
