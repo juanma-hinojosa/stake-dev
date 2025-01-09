@@ -2,24 +2,39 @@ import { useRef } from "react";
 import "../css/components-css/form-component.css";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
-function FormContactComponent() {
-  const form = useRef();
+import ReCAPTCHA from "react-google-recaptcha";
 
+function FormContactComponent() {
+  const captcha = useRef(null)
+  function onChange() {
+    console.log(captcha.current.getValue());
+  }
+
+  function SetInputs() {
+    const btnClear = document.querySelector("button");
+    const inputs = document.querySelectorAll(".set-field");
+
+    btnClear.addEventListener("click", () => {
+      inputs.forEach((input) => (input.value = ""));
+    });
+  }
+
+  const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm("service_wun5tsk", "template_30r7rbf", form.current, {
+        // publicKey: "",
         publicKey: "t0bcHqjEFkjaKf8Se",
       })
       .then(
         () => {
-          toast.success('Mensaje enviado')
+          toast.success("Mensaje enviado");
           // console.log("SUCCESS!");
         },
         (error) => {
           // console.log("FAILED...", error.text);
-          toast.error('Error',error.text)
+          toast.error("Error", error.text);
         }
       );
   };
@@ -31,7 +46,7 @@ function FormContactComponent() {
           Nombre:
         </label>
         <input
-          className="poppins-regular"
+          className="poppins-regular set-field"
           type="text"
           id="name"
           name="user_name"
@@ -42,7 +57,7 @@ function FormContactComponent() {
           Correo Electrónico:
         </label>
         <input
-          className="poppins-regular"
+          className="poppins-regular set-field"
           type="email"
           id="email"
           name="user_email"
@@ -53,14 +68,20 @@ function FormContactComponent() {
           Mensaje:
         </label>
         <textarea
-          className="poppins-regular"
+          className="poppins-regular set-field"
           id="message"
           name="message"
           rows="7"
           required
         ></textarea>
 
-        <button type="submit" className="poppins-regular">
+        <ReCAPTCHA
+        ref={captcha}
+          sitekey="6LfwCrMqAAAAADQ_nF4jyFEtMQIxS3gvasmKnVcg"
+          onChange={onChange}
+        />
+
+        <button onClick={SetInputs} type="submit" className="poppins-regular">
           Enviar
         </button>
       </form>

@@ -35,7 +35,7 @@ function NosotrosCardRSection() {
                     start={cardsN.inicio}
                     end={cardsN.fin}
                     duration={5.0}
-                    enableScrollSpy={true}
+                    enableScrollSpy={false}
                   />+
                   </h2>
                   <span>{cardsN.titulo}</span>

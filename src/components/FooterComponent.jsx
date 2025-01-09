@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "../css/footer.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
-import Logo from '/images/logo.png'
+import Logo from "/images/logo.png";
 
 function FooterComponent() {
   function getYear() {
@@ -23,7 +23,7 @@ function FooterComponent() {
   const infoLinks = [
     { id: 0, path: "/ask-us", name: "Preguntas Frecuentes" },
     { id: 1, path: "/about-us", name: "nosotros" },
-    { id: 2, path: "/portfolio", name: "trabajos" }
+    { id: 2, path: "/portfolio", name: "trabajos" },
   ];
   const iconsSocial = [
     { id: 0, icon: "ic:baseline-facebook" },
@@ -77,11 +77,9 @@ function FooterComponent() {
       <div className="helper-line"></div>
       <div className="icons-links">
         {iconsSocial.map((socialIcon) => (
-          <Icon
-            key={socialIcon.id}
-            className="icon-footer"
-            icon={socialIcon.icon}
-          />
+          <a href="#" key={socialIcon.id}>
+            <Icon className="icon-footer" icon={socialIcon.icon} />
+          </a>
         ))}
       </div>
       <div className="text-footer">
