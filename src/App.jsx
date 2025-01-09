@@ -14,6 +14,7 @@ import PreguntasFrecuentesPage from "./pages/AskPage";
 import BasesPage from "./pages/BasesPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/scrollToTop";
+import { Toaster } from "react-hot-toast";
 //Importando archivos, lib y suspense
 // import "./config/i18next.config";
 // import { useTranslation } from "react-i18next";
@@ -22,26 +23,27 @@ import ScrollToTop from "./components/scrollToTop";
 function App() {
   return (
     <>
-        {/* Colocammos todo dentro de la etiqueta suspense */}
-        <BrowserRouter>
-          <NavbarComponentTwo />
-          <ScrollToTop />
-          <Routes>
-            <Route exact path="/" element={<HomePage />} />
-            <Route path="/contact" element={<ContactPage />} />
-            <Route path="/portfolio" element={<PortfolioPage />} />
-            <Route
-              path="/portfolio/:id"
-              element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />}
-            />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/about-us" element={<NosotrosPage />} />
-            <Route path="/ask-us" element={<PreguntasFrecuentesPage />} />
-            <Route path="/bases" element={<BasesPage />} />
-            <Route path="*" element={<ErrorPage />} />
-          </Routes>
-          <FooterComponent />
-        </BrowserRouter>
+      {/* Colocammos todo dentro de la etiqueta suspense */}
+      <BrowserRouter>
+        <NavbarComponentTwo />
+        <ScrollToTop />
+        <Toaster position="top-center" reverseOrder={true} />
+        <Routes>
+          <Route exact path="/" element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/portfolio" element={<PortfolioPage />} />
+          <Route
+            path="/portfolio/:id"
+            element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />}
+          />
+          <Route path="/services" element={<ServicesPage />} />
+          <Route path="/about-us" element={<NosotrosPage />} />
+          <Route path="/ask-us" element={<PreguntasFrecuentesPage />} />
+          <Route path="/bases" element={<BasesPage />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <FooterComponent />
+      </BrowserRouter>
     </>
   );
 }

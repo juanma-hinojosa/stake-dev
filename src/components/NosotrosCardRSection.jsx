@@ -3,7 +3,7 @@ import CountUp from "react-countup";
 import "../css/components-css/nosotros-card-r-section.css";
 import VideoComponent from "/images/inicio-desk.mp4";
 
-function NosotrosCardRSection() {
+function NosotrosCardRSection() { 
   const listNumbers = [
     { titulo: "Clientes", inicio: 10, fin: 20 },
     { titulo: "Proyectos", inicio: 20, fin: 50 },

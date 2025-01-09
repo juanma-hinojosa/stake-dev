@@ -3,7 +3,11 @@ import HeroVideoComponent from "../components/HeroVidComponent";
 // import TitleSectionComponent from "../components/TitleSectionComponent";
 // import video from "/images/video-contact.mp4";
 import ContactSection from "../components/ContactSection";
+import { TitleDinamic } from "../js/title-list";
+
+
 function ContactPage() {
+TitleDinamic('Contacto - Stake Dev')
   return (
     <>
       {/* <section> */}

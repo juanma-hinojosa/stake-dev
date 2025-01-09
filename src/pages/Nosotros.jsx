@@ -5,8 +5,10 @@ import { Typewriter } from "react-simple-typewriter";
 import SectionCardContact from "../components/SectionCardContact";
 import CommentGridSection from "../components/CommentGridSection";
 import NosotrosCardRSection from "../components/NosotrosCardRSection";
+import { TitleDinamic } from "../js/title-list";
 
 function NosotrosPage() {
+  TitleDinamic('Nosotros - Stake Dev')
   const img =
     "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   // const img = "https://images.unsplash.com/photo-1542762933-ab3502717ce7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";

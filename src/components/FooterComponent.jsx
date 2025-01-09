@@ -42,7 +42,7 @@ function FooterComponent() {
         </li>
 
         <li className="column">
-          <h1 className="oswald-title">Nuestro Servicios</h1>
+          <h1 className="oswald-title">Navegar</h1>
           {navLinks.map((link) => (
             <ul key={link.id} className="montserrat-subtitle">
               <Link to={link.path} className="item">

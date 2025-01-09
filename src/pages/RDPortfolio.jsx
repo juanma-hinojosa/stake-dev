@@ -3,14 +3,18 @@ import { useParams } from "react-router-dom";
 import TitleSectionComponent from "../components/TitleSectionComponent";
 import BannerComponent from "../components/BannerComponent";
 import MobileSection from "../components/MobileSection";
-import ContactSection from "../components/ContactSection";
 import ButtonComponent from "../components/ButtonComponent";
+import { TitleDinamic } from "../js/title-list";
 
 function RouteDinamicPortfolio({ cardPortfolio }) {
   const { id } = useParams();
-
+TitleDinamic(`${cardPortfolio[id].title} - Stake Dev`)
   return (
-    <section>
+    <section
+    style={{
+      paddingBottom: '50px'
+    }}
+    >
       <BannerComponent banner={cardPortfolio[id].banner} />
       <section className="section-width">
         <TitleSectionComponent
@@ -24,7 +28,13 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
         resumenDesktop={cardPortfolio[id].resumenDesktop}
       />
 
-      <section className="section-width">
+      <section
+        className="section-width"
+        style={{
+          display:'flex',
+          justifyContent:'center'
+        }}
+      >
         <ButtonComponent path="/portfolio" name="Volver" />
       </section>
     </section>

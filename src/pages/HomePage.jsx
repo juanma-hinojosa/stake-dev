@@ -4,9 +4,11 @@ import ContactSection from "../components/ContactSection";
 import ProjectSection from "../components/ProjectsSection";
 import ServicesSection from "../components/ServicesSection";
 import HeroVideoComponent from "../components/HeroVidComponent";
+import { TitleDinamic } from "../js/title-list";
 // import Video from '/images/inicio-desk.mp4'
 
 function HomePage() {
+  TitleDinamic('Stake Dev')
   return (
     <>
       {/* <HeroComponent
