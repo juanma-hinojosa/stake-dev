@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 import '../css/components-css/card-services-component.css'
 function CardServicesComponent(props) {
   return (
-    <figure className="card-services">
+    <figure className="card-services" data-aos='zoom-in'>
       <div className="icon-container">
         <Icon className="icon-services" icon={props.icon} />
       </div>

@@ -15,12 +15,14 @@ import BasesPage from "./pages/BasesPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/scrollToTop";
 import { Toaster } from "react-hot-toast";
-//Importando archivos, lib y suspense
-// import "./config/i18next.config";
-// import { useTranslation } from "react-i18next";
-// import { Suspense } from "react";
+
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
 
 function App() {
+  AOS.init({ once: true });
+
   return (
     <>
       {/* Colocammos todo dentro de la etiqueta suspense */}

@@ -18,8 +18,8 @@ function NosotrosCardRSection() {
         </figure>
         <figure className="card-parrafo">
           <div className="title-section-card">
-            <h1 className="oswald-title-card-contact">NUESTROS VALORES.</h1>
-            <p className="poppins-regular">
+            <h1 data-aos='zoom-in' className="oswald-title-card-contact">NUESTROS VALORES.</h1>
+            <p data-aos='zoom-in' className="poppins-regular">
               Estamos aquí para acompañarte en cada etapa, desde la idea inicial
               hasta el despliegue final y más allá. En Stake Dev, no solo
               construimos sitios web; creamos experiencias digitales que
@@ -28,7 +28,7 @@ function NosotrosCardRSection() {
           </div>
           <div className="grid-card-numbers poppins-regular">
             {listNumbers.map((cardsN, key) => (
-              <div key={key} className="card-number">
+              <div data-aos='fade-up' key={key} className="card-number">
                 <p>
                   <h2>
                   <CountUp

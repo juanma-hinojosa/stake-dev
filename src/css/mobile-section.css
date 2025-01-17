@@ -1,9 +1,15 @@
+.mobile-container .hero-project-container {
+  display: none;
+}
 .mobile-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(2, 1fr);
+  /* gap: 1rem;
+  grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 50px;
+  justify-content: center;
 }
 
 .mobile-container figcaption,
@@ -12,13 +18,10 @@ img {
 }
 
 @media (max-width: 900px) {
-  .mobile-container {
-    grid-template-columns: repeat(1, 1fr);
+  .mobile-container .hero-project-container {
+    display: block;
   }
-  .mobile-container figcaption {
-    text-align: center;
-  }
-  .mobile-container figcaption img {
-    width: 80%;
+  .mobile-container .desk-project-container {
+    display: none;
   }
 }

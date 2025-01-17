@@ -64,11 +64,13 @@ export const cardPortfolio = [
     parrafo:
       "Sitio web para una empresa de refacciones y mantenimiento integral en inmuebles",
     category: "CONSTRUCCION",
-    type:'Presentacion',
+    type: "Presentacion",
     img: "/images/smive-project-hero.jpeg",
-    imgDesk: '/images/smive-project-desk.jpeg',
-    banner: "/images/smive-project-hero.jpeg",
-    resumenMobile: "La empresa de desarrollo web creó una página completa para una empresa de obras, refacciones y mantenimiento integral. La página incluye un formulario de contacto, múltiples secciones con detalles de proyectos realizados, servicios ofrecidos y un diseño intuitivo, destacando la experiencia y profesionalismo de la empresa en cada área.",
+    imgDesk: "/images/smive-project-desk.jpeg",
+    banner: "/images/3.png",
+    resumenMobile:
+      "La empresa de desarrollo web creó una página completa para una empresa de obras, refacciones y mantenimiento integral. La página incluye un formulario de contacto, múltiples secciones con detalles de proyectos realizados, servicios ofrecidos y un diseño intuitivo, destacando la experiencia y profesionalismo de la empresa en cada área.",
+    listDescription: ['Diseño de marca', 'Diseño','Desarrollo Web'],
   },
   {
     id: 1,
@@ -76,11 +78,13 @@ export const cardPortfolio = [
     parrafo:
       "Consultorio odontologico. Necesitaban brindar informacion sobre tratamientos y mostrar sus procedimientos",
     category: "odontologia",
-    type:'Lading Page',
+    type: "Lading Page",
     img: "/images/cios-project-hero.jpeg",
-    imgDesk: '/images/cios-project-desk.jpeg',
+    imgDesk: "/images/cios-project-desk.jpeg",
     banner: "/images/2.jpg",
-    resumenMobile: "La empresa de desarrollo web diseñó una página moderna y funcional para un consultorio odontológico, optimizada para una experiencia de usuario fluida. Incluye información sobre servicios, horarios de atención, equipo profesional y contacto, con un diseño atractivo y adaptable a dispositivos móviles, mejorando la visibilidad online del consultorio.",
+    resumenMobile:
+      "La empresa de desarrollo web diseñó una página moderna y funcional para un consultorio odontológico, optimizada para una experiencia de usuario fluida. Incluye información sobre servicios, horarios de atención, equipo profesional y contacto, con un diseño atractivo y adaptable a dispositivos móviles, mejorando la visibilidad online del consultorio.",
+    listDescription: ['Diseño', 'Desarrollo Web'],
   },
   // {
   //   id: 2,

@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react/dist/iconify.js";
 
 function CardPortfolioComponent(props) {
   return (
-    <figure className="card-container ">
+    <figure data-aos='zoom-in' className="card-container ">
       <figcaption className="img-porfolio-container">
         <img src={props.img} alt="" />
       </figcaption>

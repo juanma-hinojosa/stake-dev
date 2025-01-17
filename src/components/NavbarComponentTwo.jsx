@@ -47,7 +47,7 @@ function NavbarComponentTwo() {
     >
       <section>
         <Link to="/" className="logo">
-          <img src={Logo} alt="Logo Stake Dev" />
+          <img src={Logo} style={{width:'80px'}} alt="Logo Stake Dev" />
         </Link>
         <div onClick={openMenu} className="abrir-menu" id="abrir-menu">
           <Icon className="icon-dark" icon="material-symbols-light:menu" />
