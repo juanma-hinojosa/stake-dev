@@ -5,10 +5,10 @@ import VideoComponent from "/images/inicio-desk.mp4";
 
 function NosotrosCardRSection() { 
   const listNumbers = [
-    { titulo: "Clientes", inicio: 10, fin: 20 },
-    { titulo: "Proyectos", inicio: 20, fin: 50 },
+    { titulo: "Clientes", inicio: 5, fin: 10 },
+    { titulo: "Proyectos", inicio: 10, fin: 20 },
     { titulo: "Años de experiencia", inicio: 0, fin: 3 },
-    { titulo: "Titulos", inicio: 5, fin: 10 },
+    // { titulo: "Titulos", inicio: 5, fin: 10},
   ];
   return (
     <section className="section-width">
@@ -26,7 +26,7 @@ function NosotrosCardRSection() {
               impulsan tu negocio hacia el éxito
             </p>
           </div>
-          <div className="grid-card-numbers poppins-regular">
+          <div style={{marginTop:'20px'}} className="grid-card-numbers poppins-regular">
             {listNumbers.map((cardsN, key) => (
               <div data-aos='fade-up' key={key} className="card-number">
                 <p>

@@ -29,7 +29,7 @@ function App() {
       <BrowserRouter>
         <NavbarComponentTwo />
         <ScrollToTop />
-        <Toaster position="top-center" reverseOrder={true} />
+        <Toaster position="top-center" containerClassName="poppins-regular" reverseOrder={true} />
         <Routes>
           <Route exact path="/" element={<HomePage />} />
           <Route path="/contact" element={<ContactPage />} />

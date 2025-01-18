@@ -16,8 +16,8 @@ function FooterComponent() {
 
   const contactanos = [
     { id: 0, info: "1132986884", icon: "ic:baseline-phone" },
-    { id: 1, info: "stakedev@gmail.com", icon: "mdi:gmail" },
-    { id: 2, info: "stakedev-consultas@gmail.com", icon: "mdi:gmail" },
+    { id: 1, info: "stake.dev.ar@gmail.com", icon: "mdi:gmail" },
+    // { id: 2, info: "stakedev-consultas@stakedev.net", icon: "mdi:gmail" },
   ];
 
   const infoLinks = [
@@ -56,7 +56,7 @@ function FooterComponent() {
           <h1 className="oswald-title">Contactanos</h1>
           {contactanos.map((contacto) => (
             <ul key={contacto.id} className="montserrat-subtitle">
-              <p className="item">
+              <p className="item" style={{textTransform:'lowercase'}}>
                 <Icon icon={contacto.icon} />
                 {contacto.info}
               </p>
