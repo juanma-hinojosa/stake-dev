@@ -1,0 +1,31 @@
+.button-target-wrapper {
+  margin-top: 20px;
+  width: 220px;
+  height: 50px;
+  border: 2px solid var(--celeste);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-target-wrapper .button-target {
+  text-decoration: none;
+  color: var(--celeste);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  font-size: 1.2rem;
+}
+
+.button-target-wrapper .button-target .target-open {
+  margin-right: 10px;
+}
+
+.button-target-wrapper .button-target:hover {
+  background-color: var(--celeste);
+  color: #fff;
+}

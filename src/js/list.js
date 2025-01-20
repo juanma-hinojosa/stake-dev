@@ -60,6 +60,7 @@ export const cardServices = [
 export const cardPortfolio = [
   {
     id: 0,
+    link:'https://cios-consultorio.com/',
     title: "SMIVE",
     parrafo:
       "Sitio web para una empresa de refacciones y mantenimiento integral en inmuebles",
@@ -74,6 +75,7 @@ export const cardPortfolio = [
   },
   {
     id: 1,
+    link:'https://cios-consultorio.com/',
     title: "Odontologia C.I.O.S.",
     parrafo:
       "Consultorio odontologico. Necesitaban brindar informacion sobre tratamientos y mostrar sus procedimientos",
