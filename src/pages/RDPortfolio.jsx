@@ -1,8 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useParams } from "react-router-dom";
-// import TitleSectionComponent from "../components/TitleSectionComponent";
 import BannerComponent from "../components/BannerComponent";
-// import MobileSection from "../components/MobileSection";
 import ButtonComponent from "../components/ButtonComponent";
 import { TitleDinamic } from "../js/title-list";
 import TitleSectionComponent from "../components/TitleSectionComponent";
@@ -30,7 +28,7 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
           <TitleSectionComponent
             subtitle={cardPortfolio[id].type}
             title={cardPortfolio[id].title}
-            parrafo={cardPortfolio[id].resumenMobile}
+            parrafo={cardPortfolio[id].parrafo}
           />
           <div className="list-container">
             {lista.map((listaDesc, index) => (
@@ -39,11 +37,12 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
                   <span>
                     <Icon
                       className="star"
-                      style={{ fontSize: "20px" }}
+                      style={{ fontSize: "20px", marginRight: "5px" }}
                       icon="streamline:star-2-solid"
                     />
-                  </span>{" "}
-                  {listaDesc}
+                  </span>
+                  {""}
+                  {listaDesc.titleDescripcion}
                 </h2>
               </div>
             ))}
@@ -62,10 +61,30 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
 
       <section className="resumen-proyect-wrapper">
         <div className="section-width">
-          <h1 className="oswald-title title-resumen-proyect-wrapper">{cardPortfolio[id].title}</h1>
-          <h2 className="poppins-semibold info-resumen-proyect-wrapper">INFORMACION DEL PROYECTO</h2>
-          <p className="poppins-regular resumen-resumen-proyect-wrapper">{cardPortfolio[id].resumenMobile}</p>
+          <h1 className="oswald-title title-resumen-proyect-wrapper">
+            {cardPortfolio[id].title}
+          </h1>
+          <h2 className="poppins-semibold info-resumen-proyect-wrapper">
+            INFORMACION DEL PROYECTO
+          </h2>
+          <p className="poppins-regular resumen-resumen-proyect-wrapper">
+            {cardPortfolio[id].resumenMobile}
+          </p>
         </div>
+      </section>
+
+      <section className="section-width">
+        {lista.map((listDesc, index) => (
+          <div key={index} className="description-info-wrapper">
+            <h2 className="poppins-semibold title-description-info-wrapper">{listDesc.titleDescripcion}</h2>
+            <p className="poppins-regular resumen-description-info-wrapper">{listDesc.resumenDescripcion}</p>
+            {listDesc.imgDescripcion.map((img, index) => (
+              <figure key={index} className="img-description-info-wrapper">
+                <img src={`/images/projects/${img}` } alt={`${listDesc.titleDescripcion} ${cardPortfolio[id].title}`} />
+              </figure>
+            ))}
+          </div>
+        ))}
       </section>
 
       <section

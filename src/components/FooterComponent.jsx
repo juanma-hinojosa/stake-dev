@@ -26,11 +26,10 @@ function FooterComponent() {
     { id: 2, path: "/portfolio", name: "trabajos" },
   ];
   const iconsSocial = [
-    { id: 0, icon: "ic:baseline-facebook" },
-    { id: 1, icon: "mdi:instagram" },
-    { id: 2, icon: "mdi:gmail" },
-    { id: 3, icon: "ic:baseline-whatsapp" },
-    { id: 4, icon: "mdi:github" },
+    { id: 0, icon: "ic:baseline-facebook", link: "https://www.facebook.com/people/Stake-Dev/61571896937520/" },
+    { id: 1, icon: "mdi:instagram", link: "#" },
+    { id: 3, icon: "ic:baseline-whatsapp", link: "#" },
+    { id: 4, icon: "mdi:linkedin", link: "https://www.linkedin.com/company/stake-dev/about/" },
   ];
   return (
     <footer>
@@ -56,7 +55,7 @@ function FooterComponent() {
           <h1 className="oswald-title">Contactanos</h1>
           {contactanos.map((contacto) => (
             <ul key={contacto.id} className="montserrat-subtitle">
-              <p className="item" style={{textTransform:'lowercase'}}>
+              <p className="item" style={{ textTransform: "lowercase" }}>
                 <Icon icon={contacto.icon} />
                 {contacto.info}
               </p>
@@ -77,7 +76,7 @@ function FooterComponent() {
       <div className="helper-line"></div>
       <div className="icons-links">
         {iconsSocial.map((socialIcon) => (
-          <a href="#" key={socialIcon.id}>
+          <a href={socialIcon.link} key={socialIcon.id} target="_blank">
             <Icon className="icon-footer" icon={socialIcon.icon} />
           </a>
         ))}

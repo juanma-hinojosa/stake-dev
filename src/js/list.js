@@ -60,33 +60,67 @@ export const cardServices = [
 export const cardPortfolio = [
   {
     id: 0,
-    link:'https://cios-consultorio.com/',
+    link: "https://smive.netlify.app/",
     title: "SMIVE",
     parrafo:
-      "Sitio web para una empresa de refacciones y mantenimiento integral en inmuebles",
+      "Este proyecto fue desarrollado para una empresa dedicada a refacciones y mantenimiento integral en hogares y empresas. Ofrecen una amplia variedad de servicios que abarcan desde trabajos de construcción, como plomería, albañilería y gas, hasta soluciones especializadas en electricidad, instalación de sistemas de riego, jardinería y pintura. Su objetivo es brindar soluciones completas y personalizadas que aseguren la funcionalidad y estética de los espacios, trabajando con altos estándares de calidad y atención al cliente.",
     category: "CONSTRUCCION",
     type: "Presentacion",
-    img: "/images/smive-project-hero.jpeg",
-    imgDesk: "/images/smive-project-desk.jpeg",
-    banner: "/images/3.png",
+    img: "/images/projects/smive/smive-project-hero.jpeg",
+    imgDesk: "/images/projects/smive/smive-project-desk.jpeg",
+    banner: "/images/projects/smive/3.png",
     resumenMobile:
-      "La empresa de desarrollo web creó una página completa para una empresa de obras, refacciones y mantenimiento integral. La página incluye un formulario de contacto, múltiples secciones con detalles de proyectos realizados, servicios ofrecidos y un diseño intuitivo, destacando la experiencia y profesionalismo de la empresa en cada área.",
-    listDescription: ['Diseño de marca', 'Diseño','Desarrollo Web'],
+      "El objetivo principal de este proyecto fue crear una página web intuitiva y profesional que destacara la versatilidad y experiencia de la empresa en el ámbito de la construcción y mantenimiento. Diseñamos un sitio que permitiera a los usuarios explorar fácilmente los diferentes servicios ofrecidos, con descripciones claras y ejemplos de proyectos realizados. Además, incluimos una sección para consultas y presupuestos, optimizando la interacción con los clientes potenciales. La web fue estructurada para reflejar el compromiso de la empresa con la calidad y confiabilidad, posicionándola como una solución integral para quienes buscan servicios de refacción y mantenimiento.",
+    listDescription: [
+      {
+        titleDescripcion: "Diseño de marca",
+        resumenDescripcion: "Creamos el diseño de marca",
+        imgDescripcion: ["smive/diseño-logo-smive.png", "smive/"],
+      },
+      {
+        titleDescripcion: "Diseño",
+        resumenDescripcion:
+          "Creamos un Mockup con diferentes secciones para que el cliente pudiera ver las diferentes secciones de la pagina ",
+        imgDescripcion: ["smive/web-design-smive.png"],
+      },
+      {
+        titleDescripcion: "Desarrollo Web",
+        resumenDescripcion:
+          "La creacion de este proyecto contemplo que el cliente pudiera colocar la informacion de sus trabajos con un listado de fotos. Esto requirio la creacion de rutas dinamicas y poder lograr una presentacion de trabajos mejor",
+        imgDescripcion: [
+          "smive/web-developer-smive.png",
+          "smive/web-developer-smive-2.png",
+        ],
+      },
+    ],
   },
   {
     id: 1,
-    link:'https://cios-consultorio.com/',
+    link: "https://cios-consultorio.com/",
     title: "Odontologia C.I.O.S.",
     parrafo:
-      "Consultorio odontologico. Necesitaban brindar informacion sobre tratamientos y mostrar sus procedimientos",
+      "Este proyecto fue desarrollado para un consultorio odontológico especializado en brindar servicios de cuidado dental integral. El consultorio ofrece una amplia gama de tratamientos, incluyendo limpieza dental, ortodoncia, blanqueamiento, implantes y atención de urgencias. Su objetivo principal es garantizar una experiencia profesional y personalizada, ayudando a sus pacientes a mantener una sonrisa saludable. Además, el consultorio se destaca por su compromiso con la calidad del servicio, respaldado por la confianza y satisfacción de sus pacientes, reflejadas en las reseñas positivas que recibe",
     category: "odontologia",
     type: "Lading Page",
-    img: "/images/cios-project-hero.jpeg",
-    imgDesk: "/images/cios-project-desk.jpeg",
-    banner: "/images/2.jpg",
+    img: "/images/projects/seley/cios-project-hero.jpeg",
+    imgDesk: "/images/projects/seley/cios-project-desk.jpeg",
+    banner: "/images/projects/seley/2.jpg",
     resumenMobile:
-      "La empresa de desarrollo web diseñó una página moderna y funcional para un consultorio odontológico, optimizada para una experiencia de usuario fluida. Incluye información sobre servicios, horarios de atención, equipo profesional y contacto, con un diseño atractivo y adaptable a dispositivos móviles, mejorando la visibilidad online del consultorio.",
-    listDescription: ['Diseño', 'Desarrollo Web'],
+      "El objetivo de este proyecto fue crear una página web moderna y funcional que sirviera como una herramienta clave para el consultorio odontológico. La página se diseñó para informar a los usuarios sobre los tratamientos disponibles, destacar la experiencia y profesionalismo del equipo mediante reseñas de pacientes satisfechos, y facilitar el contacto con el consultorio. Incorporamos un mapa interactivo para mostrar la ubicación exacta del consultorio y optimizamos la navegación para ofrecer una experiencia clara y accesible. Este enfoque permitió posicionar al consultorio como una opción confiable y accesible para nuevos pacientes que buscan servicios odontológicos.",
+    listDescription: [
+      {
+        titleDescripcion: "Diseño",
+        resumenDescripcion:
+          "Creamos el diseño web respetando los colores del logo del consultorio",
+        imgDescripcion: ["seley/web-design-seley.png"],
+      },
+      {
+        titleDescripcion: "Desarrollo Web",
+        resumenDescripcion:
+          "Desarrollamos una lading page para que toda la informacion este disponible en una unica pagina y sea de facil acceso para los usuarios y potenciales pacientes",
+        imgDescripcion: ["seley/web-developer-seley.png"],
+      },
+    ],
   },
   // {
   //   id: 2,

@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import ReCAPTCHA from "react-google-recaptcha";
 
 function FormContactComponent() {
-  const captcha = useRef(null)
+  const captcha = useRef(null);
   function onChange() {
     console.log(captcha.current.getValue());
   }
@@ -76,7 +76,7 @@ function FormContactComponent() {
         ></textarea>
 
         <ReCAPTCHA
-        ref={captcha}
+          ref={captcha}
           sitekey="6LfwCrMqAAAAADQ_nF4jyFEtMQIxS3gvasmKnVcg"
           onChange={onChange}
         />
