@@ -41,24 +41,27 @@ function NosotrosPage() {
         </section>
         <section className="section-width">
           <p className="poppins-regular">
-            Desde nuestros humildes comienzos, hemos crecido y evolucionado
-            gracias a nuestra pasión y dedicación. Nuestra historia es un
-            testimonio de innovación y perseverancia. Únete a nosotros para ser
-            parte de un legado de éxito y progreso continuo
+            En Stake Dev, somos un equipo comprometido con transformar ideas en
+            éxitos digitales. Nuestra pasión por la innovación y la excelencia
+            nos impulsa a especializarnos en desarrollo web, diseño UX/UI y
+            gestión de proyectos digitales. Cada proyecto que emprendemos
+            representa una oportunidad para diseñar soluciones personalizadas
+            que no solo cumplan, sino superen las expectativas de nuestros
+            clientes
             <br />
             <br />
-            En Stake Dev, somos un equipo apasionado por transformar ideas en
+            {/* En Stake Dev, somos un equipo apasionado por transformar ideas en
             éxitos digitales. Con un enfoque en la innovación y la dedicación
             constante, nos especializamos en desarrollo web, diseño UX/UI, y
             gestión de proyectos digitales. Cada proyecto es una oportunidad
             para crear soluciones personalizadas que superen las expectativas de
-            nuestros clientes. <br /> <br />
-            Nuestra filosofía se basa en la colaboración cercana, trabajando
-            mano a mano contigo para entender tus necesidades y objetivos.
-            Creemos en la importancia de cada detalle, asegurando que el
-            producto final no solo cumpla con los más altos estándares de
-            calidad, sino que también marque la diferencia en el competitivo
-            mundo digital. <br />
+            nuestros clientes. <br /> <br /> */}
+            Nuestra filosofía se centra en la colaboración estrecha y
+            transparente. Trabajamos contigo para comprender tus necesidades y
+            objetivos, priorizando cada detalle para garantizar resultados de
+            alta calidad. Nuestro propósito es crear productos digitales que
+            destaquen y agreguen valor en un entorno competitivo y en constante
+            evolución. <br />
             <br />
           </p>
         </section>

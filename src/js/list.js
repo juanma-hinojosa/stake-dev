@@ -75,7 +75,7 @@ export const cardPortfolio = [
       {
         titleDescripcion: "Diseño de marca",
         resumenDescripcion: "Creamos el diseño de marca",
-        imgDescripcion: ["smive/diseño-logo-smive.png", "smive/"],
+        imgDescripcion: ["smive/diseño-logo-smive.png"],
       },
       {
         titleDescripcion: "Diseño",

@@ -50,7 +50,20 @@ function FormContactComponent() {
           type="text"
           id="name"
           name="user_name"
+          placeholder="Tu nombre"
           required
+        />
+
+        <label className="poppins-regular" htmlFor="phone">
+          Telefono:
+        </label>
+        <input
+          className="poppins-regular set-field"
+          type="number"
+          id="number"
+          name="user_phone"
+          placeholder="Tu telefono"
+          // required
         />
 
         <label className="poppins-regular" htmlFor="email">
@@ -61,6 +74,7 @@ function FormContactComponent() {
           type="email"
           id="email"
           name="user_email"
+          placeholder="Tu email"
           required
         />
 
@@ -72,6 +86,7 @@ function FormContactComponent() {
           id="message"
           name="message"
           rows="7"
+          placeholder="Dejanos tu consulta"
           required
         ></textarea>
 

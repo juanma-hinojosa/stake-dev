@@ -61,13 +61,13 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
 
       <section className="resumen-proyect-wrapper">
         <div className="section-width">
-          <h1 className="oswald-title title-resumen-proyect-wrapper">
+          <h1 data-aos='fade-up' className="oswald-title title-resumen-proyect-wrapper">
             {cardPortfolio[id].title}
           </h1>
-          <h2 className="poppins-semibold info-resumen-proyect-wrapper">
+          <h2 data-aos='zoom-in' className="poppins-semibold info-resumen-proyect-wrapper">
             INFORMACION DEL PROYECTO
           </h2>
-          <p className="poppins-regular resumen-resumen-proyect-wrapper">
+          <p data-aos='fade-up' className="poppins-regular resumen-resumen-proyect-wrapper">
             {cardPortfolio[id].resumenMobile}
           </p>
         </div>

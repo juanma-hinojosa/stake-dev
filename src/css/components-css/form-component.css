@@ -9,6 +9,14 @@
     background-color: #f9f9f9;
 }
 
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { appearance:textfield; }
+
 .my-form label {
     margin-bottom: 20px;
 }
@@ -16,6 +24,7 @@
 /* Estilos de los campos de entrada y área de texto */
 .my-form input[type="text"],
 .my-form input[type="email"],
+.my-form input[type="number"],
 .my-form textarea {
     width: 100%;
     padding: 10px;
@@ -55,6 +64,7 @@
 
     .my-form input[type="text"],
     .my-form input[type="email"],
+    .my-form input[type="number"],
     .my-form textarea {
         font-size: 14px;
     }
@@ -72,6 +82,7 @@
 
     .my-form input[type="text"],
     .my-form input[type="email"],
+    .my-form input[type="number"],
     .my-form textarea {
         font-size: 12px;
     }

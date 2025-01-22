@@ -16,8 +16,8 @@ function ContactSection() {
       >
         <TitleSectionComponent
           subtitle="Contactanos"
-          title="No dudes en contactarnos"
-          parrafo="Nos encantaría escuchar tus ideas y ayudarte a dar un salto de calidad en tu negocio. En un mundo cada vez más digital, tener una fuerte presencia en la web es esencial para el crecimiento. Trabajemos juntos para asegurar que tu negocio destaque en línea"
+          title="Que proyecto tenes? Estamos animados de ayudarte"
+          parrafo="Nos encantaría escuchar tus ideas y ayudarte a dar un salto de calidad en tu negocio. En un mundo cada vez más digital, tener una fuerte presencia en la web es esencial para el crecimiento. ¡Contáctanos! La consulta es totalmente gratuita y sin compromiso. Trabajemos juntos para asegurar que tu negocio destaque en línea"
         />
       </div>
       <FormContactComponent />
