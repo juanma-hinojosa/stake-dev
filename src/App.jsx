@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 // import NavbarComponent from "./components/NavbarComponent";
 import HomePage from "./pages/HomePage";
@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       {/* Colocammos todo dentro de la etiqueta suspense */}
-      <BrowserRouter>
+      <Router>
         <NavbarComponentTwo />
         <ScrollToTop />
         <Toaster position="top-center" containerClassName="poppins-regular" reverseOrder={true} />
@@ -45,7 +45,7 @@ function App() {
           <Route path="*" element={<ErrorPage />} />
         </Routes>
         <FooterComponent />
-      </BrowserRouter>
+      </Router>
     </>
   );
 }

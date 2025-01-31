@@ -2,9 +2,9 @@
 import "../css/components-css/hero-video-component.css";
 import ButtonComponent from "./ButtonComponent";
 function HeroVideoComponent(props) {
-  return (
+  return ( 
     <div className="box-video">
-      <video src={props.video} autoPlay muted loop></video>
+      <video src={props.video} autoPlay muted loop playsInline></video>
       <div className="info-vid">
         <div className="info-div-wrapper">
           <h1 className="oswald-title">
