@@ -5,17 +5,32 @@ import "../css/navbar-component.css";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "/images/logo.png";
+import translations from "../js/translations";
+
+// traducciones
+import { useTranslation } from "react-i18next";
 
 function NavbarComponentTwo() {
   const [navbar, setNavbar] = useState(false);
-  const navLinks = [
-    { id: 0, path: "/", name: "inicio" },
-    { id: 1, path: "/about-us", name: "nosotros" },
-    { id: 2, path: "/portfolio", name: "trabajos" },
-    { id: 3, path: "/contact", name: "contacto" },
-    //Ruta translate de prueba
-    // { id: 4, path: "/services", name: "servicios" },
-  ];
+  // const navLinks = [
+  //   { id: 0, path: "/", name: "inicio" },
+  //   { id: 1, path: "/about-us", name: "nosotros" },
+  //   { id: 2, path: "/portfolio", name: "trabajos" },
+  //   { id: 3, path: "/contact", name: "contacto" },
+  //   //Ruta translate de prueba
+  //   // { id: 4, path: "/services", name: "servicios" },
+  // ];
+
+  // traducciones
+
+  // configuracion traduccion
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language || "es";
+  const navLinks = translations[currentLang]?.navLinks || [];
+  const changeLanguage = (lang) => {
+    i18n.changeLanguage(lang);
+  };
+  // traducciones
 
   const changeBackground = () => {
     if (window.scrollY >= 10) {
@@ -47,7 +62,7 @@ function NavbarComponentTwo() {
     >
       <section>
         <Link to="/" className="logo">
-          <img src={Logo} style={{width:'80px'}} alt="Logo Stake Dev" />
+          <img src={Logo} style={{ width: "80px" }} alt="Logo Stake Dev" />
         </Link>
         <div onClick={openMenu} className="abrir-menu" id="abrir-menu">
           <Icon className="icon-dark" icon="material-symbols-light:menu" />
@@ -64,6 +79,21 @@ function NavbarComponentTwo() {
                 </Link>
               </li>
             ))}
+
+            {/* funcion cambio de idioma */}
+            <div className="buttons-lenguage-wrapper poppins-regular">
+              <span className="button" onClick={() => changeLanguage("en")}>
+                EN
+              </span>{" "}
+              |{" "}
+              <span className="button" onClick={() => changeLanguage("es")}>
+                ES
+              </span>{" "}
+              |{" "}
+              <span className="button" onClick={() => changeLanguage("pt")}>
+                PT
+              </span>
+            </div>
           </ul>
         </nav>
       </section>

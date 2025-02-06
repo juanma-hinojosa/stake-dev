@@ -2,10 +2,12 @@
 import { Link } from "react-router-dom";
 import "../css/components-css/card-portfolio.css";
 import { Icon } from "@iconify/react/dist/iconify.js";
+import { useTranslation } from "react-i18next";
 
 function CardPortfolioComponent(props) {
+  const { t } = useTranslation();
   return (
-    <figure data-aos='zoom-in' className="card-container ">
+    <figure data-aos="zoom-in" className="card-container ">
       <figcaption className="img-porfolio-container">
         <img src={props.img} alt="" />
       </figcaption>
@@ -13,7 +15,7 @@ function CardPortfolioComponent(props) {
       <div className="info-container">
         <h1 className="oswald-title">{props.title}</h1>
         <Link className="link-id poppins-regular" to={`/portfolio/${props.id}`}>
-          Ver Proyecto <Icon icon="eva:diagonal-arrow-right-up-fill" />
+          {t("ver")} <Icon icon="eva:diagonal-arrow-right-up-fill" />
         </Link>
       </div>
     </figure>

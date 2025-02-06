@@ -5,28 +5,37 @@ import ProjectSection from "../components/ProjectsSection";
 import ServicesSection from "../components/ServicesSection";
 import HeroVideoComponent from "../components/HeroVidComponent";
 import { TitleDinamic } from "../js/title-list";
+import { useTranslation } from "react-i18next";
+import translations from "../js/translations";
 // import Video from '/images/inicio-desk.mp4'
 
 function HomePage() {
   TitleDinamic("Stake Dev");
+
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language || "es";
+
+  // Extraccion de datos parar la traduccion
+  const heroSection = translations[currentLang]?.home?.heroSection || {};
+
   return (
     <>
       <HeroVideoComponent
-        fraseUno="Desarollemos tu pagina"
+        fraseUno={heroSection.fraseUno}
         video="https://i.imgur.com/lyNaU6V.mp4"
         spam={
           <Typewriter
-            words={["Unica", "Personalizada", "Hecha a Medida"]}
+            words={heroSection.words || []}
             loop={Infinity}
             cursor
             typeSpeed={120}
             deleteSpeed={80}
           />
         }
-        fraseDos="para tu negocio"
-        p="Para la creación de tu sitio web, escuchamos atentamente tus ideas y te ayudamos a transformarlas en realidad, pixel a pixel"
+        fraseDos={heroSection.fraseDos} // Traducción dinámica
+        p={heroSection.p} // Traducción dinámica
         path="/contact"
-        name="Contactanos"
+        name={heroSection.name} // Traducción dinámica
       />
       <ServicesSection />
       <ProjectSection />

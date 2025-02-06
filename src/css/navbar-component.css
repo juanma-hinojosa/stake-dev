@@ -35,8 +35,14 @@
 .nav-list {
   list-style-type: none;
   display: flex;
+  align-items: center;
   gap: 1rem;
   cursor: pointer;
+  white-space: nowrap; /* Previene el salto de línea dentro de los elementos */
+}
+
+.nav-list li {
+  white-space: nowrap; /* Previene el salto de línea dentro de los elementos */
 }
 
 .nav-list li a {
@@ -46,10 +52,33 @@
   cursor: pointer;
   transition: 0.3s;
   font-size: 20px;
+  white-space: nowrap; /* Asegura que el texto no se divida */
 }
 
 .nav-list li a:hover {
   color: var(--verde-oscuro);
+}
+
+.buttons-lenguage-wrapper  {
+  width: 100%;
+  display: flex; 
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--celeste);
+  font-size: 25px;
+}
+
+.buttons-lenguage-wrapper > .button {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--verde-oscuro);
+  margin: 0px 10px;
+  transition: .3s;
+}
+
+
+.buttons-lenguage-wrapper > .button:hover {
+  color: #ff0048;
 }
 
 .abrir-menu,
@@ -58,14 +87,12 @@
 }
 
 @media screen and (max-width: 727px) {
-
   .abrir-menu,
   .cerrar-menu {
     display: block;
     font-size: 1.7rem;
     cursor: pointer;
     color: #fff;
-
   }
 
   .nav-container {
