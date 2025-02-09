@@ -67,7 +67,7 @@ const translations = {
     ],
     cardPortfolio: [
       {
-        id: 0,
+        id: "smive",
         link: "https://smive.netlify.app/",
         title: "SMIVE",
         parrafo:
@@ -103,9 +103,9 @@ const translations = {
         ],
       },
       {
-        id: 1,
+        id: "odontologia-cios",
         link: "https://cios-consultorio.com/",
-        title: "Dentistry C.I.O.S.",
+        title: "Odontologia C.I.O.S.",
         parrafo:
           "This project was developed for a dental clinic specialized in providing comprehensive dental care services. The clinic offers a wide range of treatments, including dental cleaning, orthodontics, whitening, implants, and emergency care. Their main goal is to ensure a professional and personalized experience, helping their patients maintain a healthy smile. Additionally, the clinic stands out for its commitment to service quality, backed by the trust and satisfaction of its patients, reflected in the positive reviews it receives.",
         category: "dentistry",
@@ -169,6 +169,70 @@ const translations = {
         title: "What project do you have? We're excited to help you",
         parrafo:
           "We would love to hear your ideas and help you take a leap in quality for your business. In an increasingly digital world, having a strong web presence is essential for growth. Contact us! The consultation is completely free and with no obligation. Let's work together to ensure your business stands out online.",
+      },
+    },
+    rdPortfolio: {
+      back: "Back",
+      projectInfo: "PROJECT INFORMATION",
+      verSitio: "View Website",
+    },
+    aboutUs: {
+      title: "About Us",
+      heroSection: {
+        fraseUno: "We are",
+        words: ["Software Developers", "Web Designers", "Stake Dev"],
+        fraseDos: "Get to know us",
+        p: "At Stake Dev, we turn your ideas into real successes. With an innovative approach and constant dedication, we are here to help you achieve your goals and exceed all your expectations.",
+        name: "Contact us",
+      },
+      nosotrosSection: {
+        subtitle: "ABOUT US",
+        title: "About Us",
+        parrafoUno:
+          "At Stake Dev, we are a team committed to transforming ideas into digital successes. Our passion for innovation and excellence drives us to specialize in web development, UX/UI design, and digital project management. Every project we undertake represents an opportunity to design customized solutions that not only meet but exceed our clients' expectations.",
+        parrafoDos:
+          "Our philosophy focuses on close and transparent collaboration. We work with you to understand your needs and goals, prioritizing every detail to ensure high-quality results. Our purpose is to create digital products that stand out and add value in a competitive and ever-evolving environment.",
+      },
+      nuestroProposito: {
+        title: "Our Purpose",
+        parrafo:
+          "Our mission is excellence and the satisfaction of our clients.",
+      },
+      sectionCardComponent: {
+        title: "Let's Start Working on Your Next Project Together",
+        parrafo:
+          "We combine creativity, innovation, and technology to build a strong digital presence that stands out in the online world. By working together, we transform your ideas into customized, effective, and tailored web solutions. Let's start creating unique digital experiences that drive your success.",
+        button: "Contact Us",
+      },
+      nuestrosValores: {
+        title: "OUR VALUES",
+        parrafo:
+          "We are here to accompany you at every stage, from the initial idea to the final deployment and beyond. At Stake Dev, we don't just build websites; we create digital experiences that drive your business toward success. ",
+        listNumbers: [
+          { titulo: "Clients", inicio: 5, fin: 10 },
+          { titulo: "Projects", inicio: 10, fin: 20 },
+          { titulo: "Years of experience", inicio: 0, fin: 3 },
+        ],
+      },
+    },
+    portfolio: {
+      title: "Work",
+      heroSection: {
+        fraseUno: "Let's build your ",
+        words: ["Ideas", "Projects", "Designs"],
+        fraseDos: "for your business",
+        p: "We invite you to explore all the projects we have worked on. We are excited for you to see the results of our effort and dedication.",
+        name: "Contact Us",
+      },
+    },
+    contact: {
+      title: 'Contact',
+      heroSection: {
+        fraseUno: "Let's start now,",
+        words: ["Contact Us", "Let's Work", "Let's Build"],
+        fraseDos: "Don't Wait Anymore",
+        p: "If you have any questions or need more information, do not hesitate to contact us. We are here to help you with whatever you need and answer any questions you may have.",
+        name: "Work",
       },
     },
   },
@@ -240,7 +304,7 @@ const translations = {
     ],
     cardPortfolio: [
       {
-        id: 0,
+        id: "smive",
         link: "https://smive.netlify.app/",
         title: "SMIVE",
         parrafo:
@@ -276,7 +340,7 @@ const translations = {
         ],
       },
       {
-        id: 1,
+        id: "odontologia-cios",
         link: "https://cios-consultorio.com/",
         title: "Odontologia C.I.O.S.",
         parrafo:
@@ -344,6 +408,70 @@ const translations = {
           "Nos encantaría escuchar tus ideas y ayudarte a dar un salto de calidad en tu negocio. En un mundo cada vez más digital, tener una fuerte presencia en la web es esencial para el crecimiento. ¡Contáctanos! La consulta es totalmente gratuita y sin compromiso. Trabajemos juntos para asegurar que tu negocio destaque en línea",
       },
     },
+    rdPortfolio: {
+      back: "Volver",
+      projectInfo: "INFORMACION DEL PROYECTO",
+      verSitio: "Ver Sitio Web",
+    },
+    aboutUs: {
+      title: "Nosotros",
+      heroSection: {
+        fraseUno: "Somos",
+        words: ["Sowftare Developers", "Web Designers", "Stake Dev"],
+        fraseDos: "Conocenos",
+        p: "En Stake Dev, convertimos tus ideas en éxitos reales. Con un enfoque innovador y una dedicación constante, estamos aquí para ayudarte a alcanzar tus metas y superar todas tus expectativas.",
+        name: "Contactanos",
+      },
+      nosotrosSection: {
+        subtitle: "NOSOTROS",
+        title: "Acerca de Nosotros",
+        parrafoUno:
+          "En Stake Dev, somos un equipo comprometido con transformar ideas en éxitos digitales. Nuestra pasión por la innovación y la excelencia nos impulsa a especializarnos en desarrollo web, diseño UX/UI y gestión de proyectos digitales. Cada proyecto que emprendemos representa una oportunidad para diseñar soluciones personalizadas que no solo cumplan, sino superen las expectativas de nuestros clientes",
+        parrafoDos:
+          "Nuestra filosofía se centra en la colaboración estrecha y transparente. Trabajamos contigo para comprender tus necesidades y objetivos, priorizando cada detalle para garantizar resultados de alta calidad. Nuestro propósito es crear productos digitales que destaquen y agreguen valor en un entorno competitivo y en constante evolución.",
+      },
+      nuestroProposito: {
+        title: "Nuestro Proposito",
+        parrafo:
+          "Nuestra mision es la excelencia y la aprobacion de nuestro cliente",
+      },
+      sectionCardComponent: {
+        title: "Comenzemos a trabajar en tu proximo proyecto juntos",
+        parrafo:
+          "Unimos creatividad, innovación y tecnología para construir una sólida presencia digital que destaque en el mundo online. Al trabajar juntos, transformamos tus ideas en soluciones web personalizadas, efectivas y adaptadas a tus necesidades. Comencemos a crear experiencias digitales únicas que impulsen tu éxito",
+        button: "Contactanos",
+      },
+      nuestrosValores: {
+        title: "NUESTROS VALORES",
+        parrafo:
+          "Estamos aquí para acompañarte en cada etapa, desde la idea inicial hasta el despliegue final y más allá. En Stake Dev, no solo construimos sitios web; creamos experiencias digitales que impulsan tu negocio hacia el éxito",
+        listNumbers: [
+          { titulo: "Clientes", inicio: 5, fin: 10 },
+          { titulo: "Proyectos", inicio: 10, fin: 20 },
+          { titulo: "Años de experiencia", inicio: 0, fin: 3 },
+        ],
+      },
+    },
+    portfolio: {
+      title: "Trabajos",
+      heroSection: {
+        fraseUno: "Contruyamos tus ",
+        words: ["Ideas", "Proyectos", "Diseños"],
+        fraseDos: "para tu negocio",
+        p: "Te invitamos a explorar todos los proyectos en los que hemos trabajado. Nos entusiasma que puedas ver el resultado de nuestro esfuerzo y dedicación",
+        name: "Contactanos",
+      },
+    },
+    contact: {
+      title:'Contacto',
+      heroSection: {
+        fraseUno: "Comencemos ahora,",
+        words: ["Contactanos", "Trabajemos", "Construyamos"],
+        fraseDos: "No Esperes mas",
+        p: "Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte en lo que necesites y resolver cualquier duda que tengas",
+        name: "Trabajos",
+      },
+    }
   },
   pt: {
     ver: "Ver Projeto",
@@ -413,7 +541,7 @@ const translations = {
     ],
     cardPortfolio: [
       {
-        id: 0,
+        id: "smive",
         link: "https://smive.netlify.app/",
         title: "SMIVE",
         parrafo:
@@ -449,7 +577,7 @@ const translations = {
         ],
       },
       {
-        id: 1,
+        id: "odontologia-cios",
         link: "https://cios-consultorio.com/",
         title: "Odontologia C.I.O.S.",
         parrafo:
@@ -515,6 +643,70 @@ const translations = {
         title: "Que projeto você tem? Estamos animados em ajudar",
         parrafo:
           "Adoraríamos ouvir suas ideias e ajudá-lo a dar um salto de qualidade no seu negócio. Em um mundo cada vez mais digital, ter uma forte presença na web é essencial para o crescimento. Entre em contato! A consulta é totalmente gratuita e sem compromisso. Vamos trabalhar juntos para garantir que seu negócio se destaque online.",
+      },
+    },
+    rdPortfolio: {
+      back: "Voltar",
+      projectInfo: "INFORMAÇÕES DO PROJETO",
+      verSitio: "Ver Site",
+    },
+    aboutUs: {
+      title: "Sobre Nos",
+      heroSection: {
+        fraseUno: "Somos",
+        words: ["Desenvolvedores de Software", "Designers Web", "Stake Dev"],
+        fraseDos: "Conheça-nos",
+        p: "Na Stake Dev, transformamos suas ideias em sucessos reais. Com uma abordagem inovadora e dedicação constante, estamos aqui para ajudá-lo a alcançar seus objetivos e superar todas as suas expectativas.",
+        name: "Contate-nos",
+      },
+      nosotrosSection: {
+        subtitle: "SOBRE NÓS",
+        title: "Sobre Nós",
+        parrafoUno:
+          "Na Stake Dev, somos uma equipe comprometida em transformar ideias em sucessos digitais. Nossa paixão pela inovação e excelência nos impulsiona a nos especializar em desenvolvimento web, design UX/UI e gestão de projetos digitais. Cada projeto que realizamos representa uma oportunidade para criar soluções personalizadas que não apenas atendem, mas superam as expectativas de nossos clientes.",
+        parrafoDos:
+          "Nossa filosofia se concentra na colaboração próxima e transparente. Trabalhamos com você para entender suas necessidades e objetivos, priorizando cada detalhe para garantir resultados de alta qualidade. Nosso propósito é criar produtos digitais que se destacam e agregam valor em um ambiente competitivo e em constante evolução.",
+      },
+      nuestroProposito: {
+        title: "Nosso Propósito",
+        parrafo:
+          "Nossa missão é a excelência e a satisfação dos nossos clientes.",
+      },
+      sectionCardComponent: {
+        title: "Vamos Começar a Trabalhar no Seu Próximo Projeto Juntos",
+        parrafo:
+          "Unimos criatividade, inovação e tecnologia para construir uma presença digital sólida que se destaca no mundo online. Trabalhando juntos, transformamos suas ideias em soluções web personalizadas, eficazes e adaptadas às suas necessidades. Vamos começar a criar experiências digitais únicas que impulsionam o seu sucesso.",
+        button: "Contate-nos",
+      },
+      nuestrosValores: {
+        title: "NOSSOS VALORES",
+        parrafo:
+          "Estamos aqui para acompanhá-lo em cada etapa, desde a ideia inicial até a implantação final e além. Na Stake Dev, não apenas construímos sites; criamos experiências digitais que impulsionam o sucesso do seu negócio.",
+        listNumbers: [
+          { titulo: "Clientes", inicio: 5, fin: 10 },
+          { titulo: "Projetos", inicio: 10, fin: 20 },
+          { titulo: "Anos de experiência", inicio: 0, fin: 3 },
+        ],
+      },
+    },
+    portfolio: {
+      title: "Trabalhos",
+      heroSection: {
+        fraseUno: "Vamos construir suas ",
+        words: ["Ideias", "Projetos", "Designs"],
+        fraseDos: "para o seu negócio",
+        p: "Convidamos você a explorar todos os projetos em que trabalhamos. Estamos animados para que você veja o resultado do nosso esforço e dedicação.",
+        name: "Contate-nos",
+      },
+    },
+    contact: {
+      title: 'Contato',
+      heroSection: {
+        fraseUno: "Vamos começar agora,",
+        words: ["Contate-nos", "Vamos Trabalhar", "Vamos Construir"],
+        fraseDos: "Não Espere Mais",
+        p: "Se você tiver alguma dúvida ou precisar de mais informações, não hesite em entrar em contato conosco. Estamos aqui para ajudá-lo no que for necessário e esclarecer qualquer dúvida que você tenha.",
+        name: "Trabalhos",
       },
     },
   },

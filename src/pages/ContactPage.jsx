@@ -4,40 +4,37 @@ import HeroVideoComponent from "../components/HeroVidComponent";
 // import video from "/images/video-contact.mp4";
 import ContactSection from "../components/ContactSection";
 import { TitleDinamic } from "../js/title-list";
-
+import { useTranslation } from "react-i18next";
+import translations from "../js/translations";
 
 function ContactPage() {
-TitleDinamic('Contacto - Stake Dev')
+  const { i18n, t } = useTranslation();
+  const currentLang = i18n.language || "es";
+
+  const heroSection = translations[currentLang]?.contact?.heroSection || {};
+
+  TitleDinamic(`${t("contact.title")} - Stake Dev`);
+
   return (
     <>
       {/* <section> */}
       <HeroVideoComponent
         video="https://i.imgur.com/y74jeI3.mp4"
-        fraseUno="Comencemos ahora,"
+        fraseUno={heroSection.fraseUno}
         spam={
           <Typewriter
-            words={["Contactanos", "Trabajemos", "Construyamos"]}
+            words={heroSection.words || []}
             loop={Infinity}
             cursor
             typeSpeed={120}
             deleteSpeed={80}
           />
         }
-        fraseDos="No Esperes mas"
-        p="Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte en lo que necesites y resolver cualquier duda que tengas"
-        name="Trabajos"
+        fraseDos={heroSection.fraseDos}
+        p={heroSection.p}
+        name={heroSection.name}
         path="/portfolio"
       />
-      {/* </section> */}
-      {/* <section>
-        <section className="section-width">
-          <TitleSectionComponent
-            subtitle="CONTACTANOS"
-            title="Comunicate con Nosotros"
-            parrafo="Contactanos y hagamos crecer tu empresa"
-          />
-        </section> */}
-
       <section
         style={{
           padding: "40px 0",

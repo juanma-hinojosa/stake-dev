@@ -42,7 +42,7 @@ function App() {
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
             <Route
-              path="/portfolio/:id"
+              path="/portfolio/:projectName"
               element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />}
             />
             <Route path="/services" element={<ServicesPage />} />

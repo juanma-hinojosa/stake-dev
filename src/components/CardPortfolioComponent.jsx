@@ -14,7 +14,7 @@ function CardPortfolioComponent(props) {
 
       <div className="info-container">
         <h1 className="oswald-title">{props.title}</h1>
-        <Link className="link-id poppins-regular" to={`/portfolio/${props.id}`}>
+        <Link className="link-id poppins-regular" to={props.to}>
           {t("ver")} <Icon icon="eva:diagonal-arrow-right-up-fill" />
         </Link>
       </div>

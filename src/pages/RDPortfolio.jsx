@@ -7,31 +7,62 @@ import TitleSectionComponent from "../components/TitleSectionComponent";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import "../css/mobile-section.css";
 import ButtonTargetComponent from "../components/buttonTargetComponent";
+import { useTranslation } from "react-i18next";
+import translations from "../js/translations";
 
-function RouteDinamicPortfolio({ cardPortfolio }) {
-  const { id } = useParams();
-  const lista = cardPortfolio[id].listDescription;
+function RouteDinamicPortfolio() {
+  const { projectName } = useParams();
 
-  TitleDinamic(`${cardPortfolio[id].title} - Stake Dev`);
+  const { t, i18n } = useTranslation();
+  const currentLang = i18n.language;
+
+  // Busca el proyecto por su nombre en `cardPortfolio`
+  // const project = cardPortfolio.find(
+  //   (proj) => proj.title.toLowerCase().replace(/\s+/g, "-") === projectName
+  // );
+
+  // if (!project) {
+  //   return <h1>Proyecto no encontrado</h1>;
+  // }
+
+  // const projects =
+  //   translations[currentLang]?.cardPortfolio || translations.en.cardPortfolio;
+  // const project = projects[id];
+
+  // const lista = cardPortfolio[id].listDescription;
+
+  const projects =
+    translations[currentLang]?.cardPortfolio || translations.en.cardPortfolio;
+
+  // Buscar el proyecto por el `title` convertido en slug
+  const project = projects.find(
+    (proj) => proj.title.toLowerCase().replace(/\s+/g, "-") === projectName
+  );
+
+  if (!project) {
+    return <h1>Proyecto no encontrado</h1>;
+  }
+
+  TitleDinamic(`${project.title} - Stake Dev`);
   return (
     <section
       style={{
         paddingBottom: "50px",
       }}
     >
-      <BannerComponent banner={cardPortfolio[id].banner} />
+      <BannerComponent banner={project.banner} />
 
       <div className="helper" style={{ height: "50px" }}></div>
 
       <section className="mobile-container">
         <figure className="description-mobile">
           <TitleSectionComponent
-            subtitle={cardPortfolio[id].type}
-            title={cardPortfolio[id].title}
-            parrafo={cardPortfolio[id].parrafo}
+            subtitle={project.type}
+            title={project.title}
+            parrafo={project.parrafo}
           />
           <div className="list-container">
-            {lista.map((listaDesc, index) => (
+            {project.listDescription.map((item, index) => (
               <div key={index} data-aos="fade-up">
                 <h2 className="poppins-regular">
                   <span>
@@ -42,45 +73,64 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
                     />
                   </span>
                   {""}
-                  {listaDesc.titleDescripcion}
+                  {item.titleDescripcion}
                 </h2>
               </div>
             ))}
-            <ButtonTargetComponent link={cardPortfolio[id].link} />
+            <ButtonTargetComponent
+              link={project.link}
+              verSitio={t("rdPortfolio.verSitio")}
+            />
           </div>
         </figure>
 
         <figcaption className="desk-project-container">
-          <img data-aos="zoom-in" src={cardPortfolio[id].imgDesk} alt="desk" />
+          <img data-aos="zoom-in" src={project.imgDesk} alt="desk" />
         </figcaption>
         <figcaption className="hero-project-container">
-          <img data-aos="zoom-in" src={cardPortfolio[id].img} alt="hero" />
+          <img data-aos="zoom-in" src={project.img} alt="hero" />
         </figcaption>
       </section>
       <div className="helper" style={{ height: "50px" }}></div>
 
       <section className="resumen-proyect-wrapper">
         <div className="section-width">
-          <h1 data-aos='fade-up' className="oswald-title title-resumen-proyect-wrapper">
-            {cardPortfolio[id].title}
+          <h1
+            data-aos="fade-up"
+            className="oswald-title title-resumen-proyect-wrapper"
+          >
+            {project.title}
           </h1>
-          <h2 data-aos='zoom-in' className="poppins-semibold info-resumen-proyect-wrapper">
-            INFORMACION DEL PROYECTO
+          <h2
+            data-aos="zoom-in"
+            className="poppins-semibold info-resumen-proyect-wrapper"
+          >
+            {t("rdPortfolio.projectInfo")}
           </h2>
-          <p data-aos='fade-up' className="poppins-regular resumen-resumen-proyect-wrapper">
-            {cardPortfolio[id].resumenMobile}
+          <p
+            data-aos="fade-up"
+            className="poppins-regular resumen-resumen-proyect-wrapper"
+          >
+            {project.resumenMobile}
           </p>
         </div>
       </section>
 
       <section className="section-width">
-        {lista.map((listDesc, index) => (
+        {project.listDescription.map((item, index) => (
           <div key={index} className="description-info-wrapper">
-            <h2 className="poppins-semibold title-description-info-wrapper">{listDesc.titleDescripcion}</h2>
-            <p className="poppins-regular resumen-description-info-wrapper">{listDesc.resumenDescripcion}</p>
-            {listDesc.imgDescripcion.map((img, index) => (
+            <h2 className="poppins-semibold title-description-info-wrapper">
+              {item.titleDescripcion}
+            </h2>
+            <p className="poppins-regular resumen-description-info-wrapper">
+              {item.resumenDescripcion}
+            </p>
+            {item.imgDescripcion.map((img, index) => (
               <figure key={index} className="img-description-info-wrapper">
-                <img src={`/images/projects/${img}` } alt={`${listDesc.titleDescripcion} ${cardPortfolio[id].title}`} />
+                <img
+                  src={`/images/projects/${img}`}
+                  alt={`${item.titleDescripcion} ${project.title}`}
+                />
               </figure>
             ))}
           </div>
@@ -94,7 +144,7 @@ function RouteDinamicPortfolio({ cardPortfolio }) {
           justifyContent: "center",
         }}
       >
-        <ButtonComponent path="/portfolio" name="Volver" />
+        <ButtonComponent path="/portfolio" name={t("rdPortfolio.back")} />
       </section>
     </section>
   );

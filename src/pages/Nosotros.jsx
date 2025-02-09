@@ -6,62 +6,58 @@ import SectionCardContact from "../components/SectionCardContact";
 import CommentGridSection from "../components/CommentGridSection";
 import NosotrosCardRSection from "../components/NosotrosCardRSection";
 import { TitleDinamic } from "../js/title-list";
+import { useTranslation } from "react-i18next";
+import translations from "../js/translations";
 
 function NosotrosPage() {
-  TitleDinamic("Nosotros - Stake Dev");
-  const img =
+  // TitleDinamic("Nosotros - Stake Dev");
+  const { i18n, t } = useTranslation();
+  const currentLang = i18n.language || "es";
+
+  const heroSection = translations[currentLang]?.aboutUs?.heroSection || {};
+  const nosotrosSection =
+    translations[currentLang]?.aboutUs?.nosotrosSection || {};
+  
+    const img =
     "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   // const img = "https://images.unsplash.com/photo-1542762933-ab3502717ce7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   // const img = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+  
+  
+  TitleDinamic(`${t("aboutUs.title")} - Stake Dev`);
   return (
     <>
       <HeroVideoComponent
         video="https://i.imgur.com/5bCS1hW.mp4"
-        fraseUno="Somos"
+        fraseUno={heroSection.fraseUno}
         spam={
           <Typewriter
-            words={["Sowftare Developers", "Web Designers", "Stake Dev"]}
+            words={heroSection.words || []}
             loop={Infinity}
             cursor
             typeSpeed={120}
             deleteSpeed={80}
           />
         }
-        fraseDos="Conocenos"
-        p="En Stake Dev, convertimos tus ideas en éxitos reales. Con un enfoque innovador y una dedicación constante, estamos aquí para ayudarte a alcanzar tus metas y superar todas tus expectativas"
-        name="Contactanos"
+        fraseDos={heroSection.fraseDos}
+        p={heroSection.p}
+        name={heroSection.name}
         path="/contact"
       />
       <section>
         <section className="section-width">
           <TitleSectionComponent
-            subtitle="NOSOTROS"
-            title="Acerca de Nosotros"
+            subtitle={nosotrosSection.subtitle}
+            title={nosotrosSection.title}
           />
         </section>
         <section className="section-width">
           <p className="poppins-regular">
-            En Stake Dev, somos un equipo comprometido con transformar ideas en
-            éxitos digitales. Nuestra pasión por la innovación y la excelencia
-            nos impulsa a especializarnos en desarrollo web, diseño UX/UI y
-            gestión de proyectos digitales. Cada proyecto que emprendemos
-            representa una oportunidad para diseñar soluciones personalizadas
-            que no solo cumplan, sino superen las expectativas de nuestros
-            clientes
+            {nosotrosSection.parrafoUno}
             <br />
             <br />
-            {/* En Stake Dev, somos un equipo apasionado por transformar ideas en
-            éxitos digitales. Con un enfoque en la innovación y la dedicación
-            constante, nos especializamos en desarrollo web, diseño UX/UI, y
-            gestión de proyectos digitales. Cada proyecto es una oportunidad
-            para crear soluciones personalizadas que superen las expectativas de
-            nuestros clientes. <br /> <br /> */}
-            Nuestra filosofía se centra en la colaboración estrecha y
-            transparente. Trabajamos contigo para comprender tus necesidades y
-            objetivos, priorizando cada detalle para garantizar resultados de
-            alta calidad. Nuestro propósito es crear productos digitales que
-            destaquen y agreguen valor en un entorno competitivo y en constante
-            evolución. <br />
+            {nosotrosSection.parrafoDos}
+            <br />
             <br />
           </p>
         </section>

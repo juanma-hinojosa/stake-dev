@@ -1,8 +1,15 @@
 import { Icon } from "@iconify/react/dist/iconify.js";
 import "../css/components-css/section-card-contact.css";
 import ButtonComponent from "./ButtonComponent";
+import { useTranslation } from "react-i18next";
+import translations from "../js/translations";
 
 function SectionCardContact() {
+  const { i18n } = useTranslation();
+  const currentLang = i18n.language || "es";
+
+  const sectionCardComponent =
+    translations[currentLang]?.aboutUs?.sectionCardComponent || {};
   return (
     <section
       style={{
@@ -16,20 +23,16 @@ function SectionCardContact() {
       >
         <div className="title-section-card">
           <h1 className="oswald-title-card-contact">
-            Comenzemos a trabajar en tu proximo proyecto juntos
+            {sectionCardComponent.title}
             <span>
               <Icon className="star" icon="streamline:star-2-solid" />
             </span>
           </h1>
           <p className="poppins-regular">
-            Unimos creatividad, innovación y tecnología para construir una
-            sólida presencia digital que destaque en el mundo online. Al
-            trabajar juntos, transformamos tus ideas en soluciones web
-            personalizadas, efectivas y adaptadas a tus necesidades. Comencemos
-            a crear experiencias digitales únicas que impulsen tu éxito
+          {sectionCardComponent.parrafo}
           </p>
         </div>
-        <ButtonComponent path="/contact" name="Contactanos" />
+        <ButtonComponent path="/contact" name={sectionCardComponent.button} />
       </div>
     </section>
   );

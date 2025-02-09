@@ -1,31 +1,37 @@
 import { Typewriter } from "react-simple-typewriter";
-// import HeroComponent from "../components/HeroComponent";
 import HeroVideoComponent from "../components/HeroVidComponent";
 import ProjectSection from "../components/ProjectsSection";
-// import Video from "/images/video-proyect.mp4";
 import SectionCardContact from "../components/SectionCardContact";
 import { TitleDinamic } from "../js/title-list";
-// import TitleSectionComponent from "../components/TitleSectionComponent";
+import { useTranslation } from "react-i18next";
+import translations from "../js/translations";
 
 function PortfolioPage() {
-  TitleDinamic('Trabajos - Stake Dev')
+  const { i18n, t } = useTranslation();
+  const currentLang = i18n.language || "es";
+
+  const heroSection = translations[currentLang]?.portfolio?.heroSection || {};
+
+  // TitleDinamic("Trabajos - Stake Dev");
+  TitleDinamic(`${t("portfolio.title")} - Stake Dev`);
+
   return (
     <>
       <HeroVideoComponent
         video="https://i.imgur.com/hYXZbGc.mp4"
-        p="Te invitamos a explorar todos los proyectos en los que hemos trabajado. Nos entusiasma que puedas ver el resultado de nuestro esfuerzo y dedicación"
-        fraseUno="Contruyamos tus"
+        fraseUno={heroSection.fraseUno}
         spam={
           <Typewriter
-            words={["Ideas", "Proyectos", "Diseños"]}
+            words={heroSection.words || []}
             loop={Infinity}
             cursor
             typeSpeed={120}
             deleteSpeed={80}
           />
         }
-        fraseDos="para tu negocio"
-        name="Contactanos"
+        fraseDos={heroSection.fraseDos}
+        p={heroSection.p}
+        name={heroSection.name}
         path="/contact"
       />
       <ProjectSection />

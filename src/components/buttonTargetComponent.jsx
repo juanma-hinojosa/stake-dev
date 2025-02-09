@@ -7,7 +7,7 @@ function ButtonTargetComponent(props) {
     <div className="button-target-wrapper" data-aos='fade-up'>
       <a className="button-target poppins-regular" href={props.link} target="_blank">
         <Icon icon="fluent:arrow-enter-16-filled" width="20" height="20" className="target-open" />
-        Ver Sitio Web
+        {props.verSitio}
       </a>
     </div>
   );

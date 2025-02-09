@@ -22,12 +22,13 @@ function ProjectSection() {
         />
       </div>
       <div className="grid-portfolio-container">
-        {cardPortfolio.map((portfolio) => (
+        {cardPortfolio.map((project) => (
           <CardPortfolioComponent
-            id={portfolio.id}
-            key={portfolio.id}
-            img={portfolio.img}
-            title={portfolio.title}
+            id={project.id}
+            to={`/portfolio/${project.title.toLowerCase().replace(/\s+/g, "-")}`}
+            key={project.id}
+            img={project.img}
+            title={project.title}
             // parrafo={portfolio.parrafo}
           />
         ))}
