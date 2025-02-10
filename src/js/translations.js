@@ -1,6 +1,26 @@
 const translations = {
   en: {
     ver: "See Project",
+    footerComponent: {
+      navigate: {
+        title: "Navigate",
+        navLinks: [
+          { id: 0, path: "/", name: "Home" },
+          { id: 1, path: "/about-us", name: "About Us" },
+          { id: 2, path: "/portfolio", name: "Portfolio" },
+        ],
+      },
+      info: {
+        title: "Information",
+        infoLinks: [
+          { id: 0, path: "/ask-us", name: "Ask Us" },
+          { id: 1, path: "/about-us", name: "About Us" },
+          { id: 2, path: "/portfolio", name: "Portfolio" },
+        ],
+      },
+      contact: 'Contact Us',
+      spam:'All Rights Reserved'
+    },
     navLinks: [
       { id: 0, path: "/", name: "Home" },
       { id: 1, path: "/about-us", name: "About Us" },
@@ -226,7 +246,7 @@ const translations = {
       },
     },
     contact: {
-      title: 'Contact',
+      title: "Contact",
       heroSection: {
         fraseUno: "Let's start now,",
         words: ["Contact Us", "Let's Work", "Let's Build"],
@@ -238,6 +258,26 @@ const translations = {
   },
   es: {
     ver: "Ver Proyecto",
+    footerComponent: {
+      navigate: {
+        title: "Navegar",
+        navLinks: [
+          { id: 0, path: "/", name: "inicio" },
+          { id: 1, path: "/about-us", name: "nosotros" },
+          { id: 2, path: "/portfolio", name: "trabajos" },
+        ],
+      },
+      info: {
+        title: "Informacion",
+        infoLinks: [
+          { id: 0, path: "/ask-us", name: "Preguntas Frecuentes" },
+          { id: 1, path: "/about-us", name: "nosotros" },
+          { id: 2, path: "/portfolio", name: "trabajos" },
+        ],
+      },
+      contact: 'Contactanos',
+      spam:'Todos los Derechos Reservados'
+    },
     navLinks: [
       { id: 0, path: "/", name: "Inicio" },
       { id: 1, path: "/about-us", name: "Nosotros" },
@@ -463,7 +503,7 @@ const translations = {
       },
     },
     contact: {
-      title:'Contacto',
+      title: "Contacto",
       heroSection: {
         fraseUno: "Comencemos ahora,",
         words: ["Contactanos", "Trabajemos", "Construyamos"],
@@ -471,10 +511,30 @@ const translations = {
         p: "Si tienes alguna pregunta o necesitas más información, no dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte en lo que necesites y resolver cualquier duda que tengas",
         name: "Trabajos",
       },
-    }
+    },
   },
   pt: {
     ver: "Ver Projeto",
+    footerComponent: {
+      navigate: {
+        title: "Navegar",
+        navLinks: [
+          { id: 0, path: "/", name: "Início" },
+          { id: 1, path: "/about-us", name: "Sobre Nós" },
+          { id: 2, path: "/portfolio", name: "Portfólio" },
+        ],
+      },
+      info: {
+        title: "Informação",
+        infoLinks: [
+          { id: 0, path: "/ask-us", name: "Perguntas Frequentes" },
+          { id: 1, path: "/about-us", name: "Sobre Nós" },
+          { id: 2, path: "/portfolio", name: "Portfólio" },
+        ],
+      },
+      contact: 'Contate-Nos',
+      spam:'Todos os Direitos Reservados'
+    },
     navLinks: [
       { id: 0, path: "/", name: "Início" },
       { id: 1, path: "/about-us", name: "Sobre Nós" },
@@ -700,7 +760,7 @@ const translations = {
       },
     },
     contact: {
-      title: 'Contato',
+      title: "Contato",
       heroSection: {
         fraseUno: "Vamos começar agora,",
         words: ["Contate-nos", "Vamos Trabalhar", "Vamos Construir"],
