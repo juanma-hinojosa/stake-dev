@@ -9,4 +9,4 @@ function ScrollToTop() {
     }, [pathname])
 }
 
-export default ScrollToTop
+export default ScrollToTop 
