@@ -1,6 +1,5 @@
 import TitleSectionComponent from "../components/TitleSectionComponent";
 import HeroVideoComponent from "../components/HeroVidComponent";
-// import Video from "/images/video-nosotros.mp4";
 import { Typewriter } from "react-simple-typewriter";
 import SectionCardContact from "../components/SectionCardContact";
 import CommentGridSection from "../components/CommentGridSection";
@@ -8,6 +7,7 @@ import NosotrosCardRSection from "../components/NosotrosCardRSection";
 import { TitleDinamic } from "../js/title-list";
 import { useTranslation } from "react-i18next";
 import translations from "../js/translations";
+import { Helmet } from "react-helmet-async";
 
 function NosotrosPage() {
   // TitleDinamic("Nosotros - Stake Dev");
@@ -17,16 +17,29 @@ function NosotrosPage() {
   const heroSection = translations[currentLang]?.aboutUs?.heroSection || {};
   const nosotrosSection =
     translations[currentLang]?.aboutUs?.nosotrosSection || {};
-  
-    const img =
+
+  const img =
     "https://images.unsplash.com/photo-1629904853716-f0bc54eea481?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   // const img = "https://images.unsplash.com/photo-1542762933-ab3502717ce7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
   // const img = 'https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1472&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
-  
-  
+
   TitleDinamic(`${t("aboutUs.title")} - Stake Dev`);
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Nosotros - Stake Dev, somos una pequeña empresa de soluciones digitales en crecimiento y nos enfocamos en la creacion de Lading Page, Diseño Institucinal y Ecommerce"
+        />
+        <meta
+          name="keywords"
+          content="Soluciones digitales, creacion de branding, diseño web, desarrollo web. Lading Page, diseño institucional, apps y ecommerce"
+        />
+        <meta
+          name="category"
+          content="Stake Dev, empresa de soluciones digitales, creacion de branding, diseño web, desarrollo web. Lading Page, diseño institucional, apps y ecommerce"
+        />
+      </Helmet>
       <HeroVideoComponent
         video="https://i.imgur.com/5bCS1hW.mp4"
         fraseUno={heroSection.fraseUno}

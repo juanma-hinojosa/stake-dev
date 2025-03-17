@@ -1,4 +1,5 @@
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+// import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 // import NavbarComponent from "./components/NavbarComponent";
 import HomePage from "./pages/HomePage";
@@ -8,10 +9,10 @@ import PortfolioPage from "./pages/PortfolioPage";
 import RouteDinamicPortfolio from "./pages/RDPortfolio";
 import { cardPortfolio } from "./js/list";
 import FooterComponent from "./components/FooterComponent";
-import ServicesPage from "./pages/ServicesPage";
+// import ServicesPage from "./pages/ServicesPage";
 import NosotrosPage from "./pages/Nosotros";
 import PreguntasFrecuentesPage from "./pages/AskPage";
-import BasesPage from "./pages/BasesPage";
+// import BasesPage from "./pages/BasesPage";
 import ContactPage from "./pages/ContactPage";
 import ScrollToTop from "./components/scrollToTop";
 import { Toaster } from "react-hot-toast";
@@ -45,10 +46,10 @@ function App() {
               path="/portfolio/:projectName"
               element={<RouteDinamicPortfolio cardPortfolio={cardPortfolio} />}
             />
-            <Route path="/services" element={<ServicesPage />} />
+            {/* <Route path="/services" element={<ServicesPage />} /> */}
             <Route path="/about-us" element={<NosotrosPage />} />
             <Route path="/ask-us" element={<PreguntasFrecuentesPage />} />
-            <Route path="/bases" element={<BasesPage />} />
+            {/* <Route path="/bases" element={<BasesPage />} /> */}
             <Route path="*" element={<ErrorPage />} />
           </Routes>
           <FooterComponent />

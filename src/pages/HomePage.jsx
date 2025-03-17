@@ -7,6 +7,7 @@ import HeroVideoComponent from "../components/HeroVidComponent";
 import { TitleDinamic } from "../js/title-list";
 import { useTranslation } from "react-i18next";
 import translations from "../js/translations";
+import { Helmet } from "react-helmet-async";
 // import Video from '/images/inicio-desk.mp4'
 
 function HomePage() {
@@ -20,6 +21,20 @@ function HomePage() {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Stake Dev, empresa de soluciones digitales, creacion de branding, diseño web, desarrollo web. Lading Page, diseño institucional, apps y ecommerce"
+        />
+        <meta
+          name="keywords"
+          content="Soluciones digitales, creacion de branding, diseño web, desarrollo web. Lading Page, diseño institucional, apps y ecommerce"
+        />
+        <meta
+          name="category"
+          content="Stake Dev, empresa de soluciones digitales, creacion de branding, diseño web, desarrollo web. Lading Page, diseño institucional, apps y ecommerce"
+        />
+      </Helmet>
       <HeroVideoComponent
         fraseUno={heroSection.fraseUno}
         video="https://i.imgur.com/lyNaU6V.mp4"

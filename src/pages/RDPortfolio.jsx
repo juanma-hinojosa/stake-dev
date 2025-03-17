@@ -9,6 +9,7 @@ import "../css/mobile-section.css";
 import ButtonTargetComponent from "../components/buttonTargetComponent";
 import { useTranslation } from "react-i18next";
 import translations from "../js/translations";
+import { Helmet } from "react-helmet-async";
 
 function RouteDinamicPortfolio() {
   const { projectName } = useParams();
@@ -45,108 +46,124 @@ function RouteDinamicPortfolio() {
 
   TitleDinamic(`${project.title} - Stake Dev`);
   return (
-    <section
-      style={{
-        paddingBottom: "50px",
-      }}
-    >
-      <BannerComponent banner={project.banner} />
-
-      <div className="helper" style={{ height: "50px" }}></div>
-
-      <section className="mobile-container">
-        <figure className="description-mobile">
-          <TitleSectionComponent
-            subtitle={project.type}
-            title={project.title}
-            parrafo={project.parrafo}
-          />
-          <div className="list-container">
-            {project.listDescription.map((item, index) => (
-              <div key={index} data-aos="fade-up">
-                <h2 className="poppins-regular">
-                  <span>
-                    <Icon
-                      className="star"
-                      style={{ fontSize: "20px", marginRight: "5px" }}
-                      icon="streamline:star-2-solid"
-                    />
-                  </span>
-                  {""}
-                  {item.titleDescripcion}
-                </h2>
-              </div>
-            ))}
-            <ButtonTargetComponent
-              link={project.link}
-              verSitio={t("rdPortfolio.verSitio")}
-            />
-          </div>
-        </figure>
-
-        <figcaption className="desk-project-container">
-          <img data-aos="zoom-in" src={project.imgDesk} alt="desk" />
-        </figcaption>
-        <figcaption className="hero-project-container">
-          <img data-aos="zoom-in" src={project.img} alt="hero" />
-        </figcaption>
-      </section>
-      <div className="helper" style={{ height: "50px" }}></div>
-
-      <section className="resumen-proyect-wrapper">
-        <div className="section-width">
-          <h1
-            data-aos="fade-up"
-            className="oswald-title title-resumen-proyect-wrapper"
-          >
-            {project.title}
-          </h1>
-          <h2
-            data-aos="zoom-in"
-            className="poppins-semibold info-resumen-proyect-wrapper"
-          >
-            {t("rdPortfolio.projectInfo")}
-          </h2>
-          <p
-            data-aos="fade-up"
-            className="poppins-regular resumen-resumen-proyect-wrapper"
-          >
-            {project.resumenMobile}
-          </p>
-        </div>
-      </section>
-
-      <section className="section-width">
-        {project.listDescription.map((item, index) => (
-          <div key={index} className="description-info-wrapper">
-            <h2 className="poppins-semibold title-description-info-wrapper">
-              {item.titleDescripcion}
-            </h2>
-            <p className="poppins-regular resumen-description-info-wrapper">
-              {item.resumenDescripcion}
-            </p>
-            {item.imgDescripcion.map((img, index) => (
-              <figure key={index} className="img-description-info-wrapper">
-                <img
-                  src={`/images/projects/${img}`}
-                  alt={`${item.titleDescripcion} ${project.title}`}
-                />
-              </figure>
-            ))}
-          </div>
-        ))}
-      </section>
-
+    <>
+      <Helmet>
+        <meta
+          name="description"
+          content={`Proyecto ${project.title}. ${project.listDescription.map((item) => item.titleDescripcion).join(", ")}`}
+        />
+        <meta
+          name="keywords"
+          content="Contacto Soluciones digitales, creacion de branding, diseño web, desarrollo web. Lading Page, diseño institucional, apps y ecommerce"
+        />
+        <meta
+          name="category"
+          content="Stake Dev, empresa de soluciones digitales, creacion de branding, diseño web, desarrollo web. Lading Page, diseño institucional, apps y ecommerce"
+        />
+      </Helmet>
       <section
-        className="section-width"
         style={{
-          display: "flex",
-          justifyContent: "center",
+          paddingBottom: "50px",
         }}
       >
-        <ButtonComponent path="/portfolio" name={t("rdPortfolio.back")} />
+        <BannerComponent banner={project.banner} />
+
+        <div className="helper" style={{ height: "50px" }}></div>
+
+        <section className="mobile-container">
+          <figure className="description-mobile">
+            <TitleSectionComponent
+              subtitle={project.type}
+              title={project.title}
+              parrafo={project.parrafo}
+            />
+            <div className="list-container">
+              {project.listDescription.map((item, index) => (
+                <div key={index} data-aos="fade-up">
+                  <h2 className="poppins-regular">
+                    <span>
+                      <Icon
+                        className="star"
+                        style={{ fontSize: "20px", marginRight: "5px" }}
+                        icon="streamline:star-2-solid"
+                      />
+                    </span>
+                    {""}
+                    {item.titleDescripcion}
+                  </h2>
+                </div>
+              ))}
+              <ButtonTargetComponent
+                link={project.link}
+                verSitio={t("rdPortfolio.verSitio")}
+              />
+            </div>
+          </figure>
+
+          <figcaption className="desk-project-container">
+            <img data-aos="zoom-in" src={project.imgDesk} alt="desk" />
+          </figcaption>
+          <figcaption className="hero-project-container">
+            <img data-aos="zoom-in" src={project.img} alt="hero" />
+          </figcaption>
+        </section>
+        <div className="helper" style={{ height: "50px" }}></div>
+
+        <section className="resumen-proyect-wrapper">
+          <div className="section-width">
+            <h1
+              data-aos="fade-up"
+              className="oswald-title title-resumen-proyect-wrapper"
+            >
+              {project.title}
+            </h1>
+            <h2
+              data-aos="zoom-in"
+              className="poppins-semibold info-resumen-proyect-wrapper"
+            >
+              {t("rdPortfolio.projectInfo")}
+            </h2>
+            <p
+              data-aos="fade-up"
+              className="poppins-regular resumen-resumen-proyect-wrapper"
+            >
+              {project.resumenMobile}
+            </p>
+          </div>
+        </section>
+
+        <section className="section-width">
+          {project.listDescription.map((item, index) => (
+            <div key={index} className="description-info-wrapper">
+              <h2 className="poppins-semibold title-description-info-wrapper">
+                {item.titleDescripcion}
+              </h2>
+              <p className="poppins-regular resumen-description-info-wrapper">
+                {item.resumenDescripcion}
+              </p>
+              {item.imgDescripcion.map((img, index) => (
+                <figure key={index} className="img-description-info-wrapper">
+                  <img
+                    src={`/images/projects/${img}`}
+                    alt={`${item.titleDescripcion} ${project.title}`}
+                  />
+                </figure>
+              ))}
+            </div>
+          ))}
+        </section>
+
+        <section
+          className="section-width"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <ButtonComponent path="/portfolio" name={t("rdPortfolio.back")} />
+        </section>
       </section>
-    </section>
+    </>
   );
 }
 

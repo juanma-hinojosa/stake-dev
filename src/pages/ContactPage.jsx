@@ -6,6 +6,7 @@ import ContactSection from "../components/ContactSection";
 import { TitleDinamic } from "../js/title-list";
 import { useTranslation } from "react-i18next";
 import translations from "../js/translations";
+import { Helmet } from "react-helmet-async";
 
 function ContactPage() {
   const { i18n, t } = useTranslation();
@@ -17,6 +18,20 @@ function ContactPage() {
 
   return (
     <>
+      <Helmet>
+        <meta
+          name="description"
+          content="Contacanos - Stake Dev. Te invitamos a que entres en contacto con nosotros y nos cuente tus ideas"
+        />
+        <meta
+          name="keywords"
+          content="Contacto Soluciones digitales, creacion de branding, diseño web, desarrollo web. Lading Page, diseño institucional, apps y ecommerce"
+        />
+        <meta
+          name="category"
+          content="Stake Dev, empresa de soluciones digitales, creacion de branding, diseño web, desarrollo web. Lading Page, diseño institucional, apps y ecommerce"
+        />
+      </Helmet>
       {/* <section> */}
       <HeroVideoComponent
         video="https://i.imgur.com/y74jeI3.mp4"
