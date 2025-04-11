@@ -60,7 +60,7 @@ export const cardServices = [
 export const cardPortfolio = [
   {
     id: 0,
-    link: "https://smive.netlify.app/",
+    link: "https://smive-reparaciones.com/",
     title: "SMIVE",
     parrafo:
       "Este proyecto fue desarrollado para una empresa dedicada a refacciones y mantenimiento integral en hogares y empresas. Ofrecen una amplia variedad de servicios que abarcan desde trabajos de construcción, como plomería, albañilería y gas, hasta soluciones especializadas en electricidad, instalación de sistemas de riego, jardinería y pintura. Su objetivo es brindar soluciones completas y personalizadas que aseguren la funcionalidad y estética de los espacios, trabajando con altos estándares de calidad y atención al cliente.",

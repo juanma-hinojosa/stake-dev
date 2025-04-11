@@ -88,7 +88,7 @@ const translations = {
     cardPortfolio: [
       {
         id: "smive",
-        link: "https://smive.netlify.app/",
+        link: "https://smive-reparaciones.com/",
         title: "SMIVE",
         parrafo:
           "This project was developed for a company dedicated to repairs and comprehensive maintenance for homes and businesses. They offer a wide variety of services ranging from construction work, such as plumbing, masonry, and gas, to specialized solutions in electricity, irrigation system installation, gardening, and painting. Their goal is to provide complete and customized solutions that ensure the functionality and aesthetics of spaces, working with high standards of quality and customer service.",
@@ -441,7 +441,7 @@ const translations = {
     cardPortfolio: [
       {
         id: "smive",
-        link: "https://smive.netlify.app/",
+        link: "https://smive-reparaciones.com/",
         title: "SMIVE",
         parrafo:
           "Este proyecto fue desarrollado para una empresa dedicada a refacciones y mantenimiento integral en hogares y empresas. Ofrecen una amplia variedad de servicios que abarcan desde trabajos de construcción, como plomería, albañilería y gas, hasta soluciones especializadas en electricidad, instalación de sistemas de riego, jardinería y pintura. Su objetivo es brindar soluciones completas y personalizadas que aseguren la funcionalidad y estética de los espacios, trabajando con altos estándares de calidad y atención al cliente.",
@@ -797,7 +797,7 @@ const translations = {
     cardPortfolio: [
       {
         id: "smive",
-        link: "https://smive.netlify.app/",
+        link: "https://smive-reparaciones.com/",
         title: "SMIVE",
         parrafo:
           "Este projeto foi desenvolvido para uma empresa dedicada a reparos e manutenção integral em residências e empresas. Eles oferecem uma ampla variedade de serviços que abrangem desde trabalhos de construção, como encanamento, alvenaria e gás, até soluções especializadas em eletricidade, instalação de sistemas de irrigação, jardinagem e pintura. Seu objetivo é fornecer soluções completas e personalizadas que garantam a funcionalidade e estética dos espaços, trabalhando com altos padrões de qualidade e atendimento ao cliente.",
